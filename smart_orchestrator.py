@@ -227,6 +227,15 @@ def main():
             print(f"  ✅  {cfg['name']:12s} — scraped T+{sorted(miss.keys())} successfully")
         else:
             print(f"  ❌  {cfg['name']:12s} — FAILED for T+{sorted(miss.keys())}")
+            
+    print(f"\n{'='*62}")
+    print("  TRIGGERING INDEX COMPUTATION")
+    print(f"{'='*62}")
+    try:
+        subprocess.run(["python3", "compute_daily_index.py", "--date", today_str], check=True)
+    except Exception as e:
+        print(f"  ❌  Failed to trigger compute_daily_index.py: {e}")
+        
     print()
 
 
