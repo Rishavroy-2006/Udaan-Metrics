@@ -1,0 +1,6 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BOM,GOI,Goibibo,none,2026-09-07,1,Economy,,,,False,unknown,parse_error,2026-09-06T14:11:51.897648+05:30,GOIBIBO_RUN_20260906_141151,ota,Goibibo
+DEL,BLR,GOI,Goibibo,none,2026-09-07,1,Economy,,,,False,unknown,parse_error,2026-09-06T14:17:29.716509+05:30,GOIBIBO_RUN_20260906_141729,ota,Goibibo
+BOM,BLR,GOI,Goibibo,none,2026-09-07,1,Economy,,,,False,unknown,parse_error,2026-09-06T14:22:47.431659+05:30,GOIBIBO_RUN_20260906_142247,ota,Goibibo
+DEL,CCU,GOI,Goibibo,none,2026-09-07,1,Economy,,,,False,unknown,parse_error,2026-09-06T14:28:18.228582+05:30,GOIBIBO_RUN_20260906_142818,ota,Goibibo
+BLR,HYD,GOI,Goibibo,none,2026-09-07,1,Economy,,,,False,unknown,parse_error,2026-09-06T14:33:01.939101+05:30,GOIBIBO_RUN_20260906_143301,ota,Goibibo
