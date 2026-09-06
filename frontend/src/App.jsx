@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'r
 import { SkeletonPage, SkeletonGovPortal, SkeletonCitizenPortal, SkeletonLiveData, SkeletonText } from './components/common/SkeletonLoaders.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import BottomNav from './components/BottomNav.jsx';
 import OverviewTab from './components/OverviewTab.jsx';
 import { getDailyIndex } from './api/client.js';
 
@@ -12,6 +13,7 @@ const MethodologyTab = React.lazy(() => import('./components/MethodologyTab.jsx'
 const AboutTab = React.lazy(() => import('./components/AboutTab.jsx'));
 const GovernmentDashboard = React.lazy(() => import('./components/GovernmentDashboard.jsx'));
 const CitizenDashboard = React.lazy(() => import('./components/CitizenDashboard.jsx'));
+const MoreMenuTab = React.lazy(() => import('./components/MoreMenuTab.jsx'));
 
 // Dynamic loading fallback
 const TabLoader = () => {
@@ -22,6 +24,7 @@ const TabLoader = () => {
     case '/live-data': return <SkeletonLiveData />;
     case '/methodology':
     case '/about':
+    case '/more':
       return <div className="max-w-4xl mx-auto p-12"><SkeletonText lines={10} /></div>;
     default: return <SkeletonPage />;
   }
@@ -47,7 +50,7 @@ export default function App() {
           lastUpdated={indexData?.timestamp}
         />
         
-        <main className="flex-grow flex flex-col">
+        <main className="flex-grow flex flex-col pb-20 md:pb-0">
           <Suspense fallback={<TabLoader />}>
             <Routes>
               <Route path="/" element={<OverviewTab indexData={indexData} />} />
@@ -56,13 +59,16 @@ export default function App() {
               <Route path="/live-data" element={<LiveDataTab />} />
               <Route path="/methodology" element={<MethodologyTab />} />
               <Route path="/about" element={<AboutTab />} />
+              <Route path="/more" element={<MoreMenuTab />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Suspense>
         </main>
 
         <Footer />
+        <BottomNav />
       </div>
     </Router>
   );
 }
+

@@ -17,7 +17,7 @@ const Header = ({ lastUpdated }) => {
     <header className="bg-navy text-white px-6 py-4 flex flex-col md:flex-row md:items-center justify-between shadow-sm sticky top-0 z-50 gap-4 md:gap-0">
       <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-12">
         <h1 className="font-serif text-2xl font-bold tracking-tight">Udaan Metrics</h1>
-        <nav className="flex gap-4 md:gap-8 overflow-x-auto pb-2 md:pb-0">
+        <nav className="hidden md:flex gap-4 md:gap-8 overflow-x-auto pb-2 md:pb-0">
           {tabs.map((tab) => {
             const isActive = location.pathname === tab.path;
             return (
