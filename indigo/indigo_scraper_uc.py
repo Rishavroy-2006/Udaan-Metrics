@@ -340,7 +340,7 @@ def append_csv(quotes: list[FareQuote], path: str):
         for q in quotes:
             writer.writerow(asdict(q))
 
-def run(target_windows=None):
+def run(target_windows=None, target_matrix=None):
     import datetime as dt
     import os
     
@@ -364,7 +364,11 @@ def run(target_windows=None):
         print(f"  HORIZON: T+{advance_days}")
         print(f"{'='*60}")
         
-        for idx, (origin, dest) in enumerate(ROUTES):
+        routes_to_scrape = ROUTES
+        if target_matrix and str(advance_days) in target_matrix:
+            routes_to_scrape = [tuple(r.split("-")) for r in target_matrix[str(advance_days)]]
+            
+        for idx, (origin, dest) in enumerate(routes_to_scrape):
             print(f"\n--- Scraping T+{advance_days} ({origin} -> {dest}) ---")
             
             print("Starting fresh undetected-chromedriver session...")
@@ -406,11 +410,17 @@ def run(target_windows=None):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="IndiGo Scraper")
+    parser.add_argument("--targets", type=str, help="JSON dictionary of missing routes per window")
     parser.add_argument("--windows", type=str, help="Comma separated list of horizons, e.g. 1,7")
     args = parser.parse_args()
     
+    target_matrix = None
+    if getattr(args, 'targets', None):
+        import json
+        target_matrix = json.loads(args.targets)
+    
     if args.windows:
         target_windows = [int(w.strip()) for w in args.windows.split(",")]
-        run(target_windows=target_windows)
+        run(target_windows=target_windows, target_matrix=target_matrix)
     else:
-        run()
+        run(target_matrix=target_matrix)

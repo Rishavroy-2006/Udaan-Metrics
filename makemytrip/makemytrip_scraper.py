@@ -503,11 +503,17 @@ def run(target_windows=None, target_routes=None, delay_min=30, delay_max=45):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="MakeMyTrip Flight Scraper")
+    parser.add_argument("--targets", type=str, help="JSON dictionary of missing routes per window")
     parser.add_argument("--windows", type=str, help="Comma separated list of horizons, e.g. 1,7")
     parser.add_argument("--routes", type=str, help="Comma separated routes, e.g. DEL-BOM,DEL-BLR")
     parser.add_argument("--delay-min", type=int, default=30, help="Min delay between routes (default: 30)")
     parser.add_argument("--delay-max", type=int, default=45, help="Max delay between routes (default: 45)")
     args = parser.parse_args()
+    
+    target_matrix = None
+    if getattr(args, 'targets', None):
+        import json
+        target_matrix = json.loads(args.targets)
     
     target_windows = None
     if args.windows:
@@ -518,6 +524,7 @@ if __name__ == "__main__":
         target_routes = [tuple(r.strip().split("-")) for r in args.routes.split(",")]
         
     run(
+        target_matrix=target_matrix,
         target_windows=target_windows,
         target_routes=target_routes,
         delay_min=args.delay_min,

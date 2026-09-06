@@ -48,49 +48,62 @@ REQUIRED_WINDOWS = {1, 7, 15, 30, 45}
 INTER_SCRAPER_COOLDOWN = 60
 
 
-def get_completed_horizons(prefix: str, today_str: str) -> set:
-    """Return the set of advance-purchase-day integers successfully completed on disk.
-       A horizon is only considered complete if all 6 routes were processed."""
+def get_missing_targets(prefix: str, today_str: str) -> dict:
+    """Return a dict mapping advance-purchase-day (int) -> list of missing routes."""
     raw_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                            "udaan_data", "raw", today_str)
+    
+    # Initialize all as missing
+    missing = {w: ["DEL-BOM", "DEL-BLR", "BOM-BLR", "DEL-CCU", "BLR-HYD", "MAA-DEL"] for w in REQUIRED_WINDOWS}
+
     if not os.path.exists(raw_dir):
-        return set()
+        return missing
 
     import pandas as pd
     import glob
 
-    completed = set()
     files = glob.glob(os.path.join(raw_dir, f"{prefix}_*.csv"))
+    if not files:
+        return missing
+        
+    found_routes = {w: set() for w in REQUIRED_WINDOWS}
     
     for fname in files:
         try:
             df = pd.read_csv(fname)
             if all(col in df.columns for col in ['advance_purchase_days', 'origin', 'destination', 'status']):
-                # Drop catastrophic 'error' and 'parse_error' statuses so they don't count towards completion
                 df = df[~df['status'].isin(['error', 'parse_error'])]
                 df['route'] = df['origin'] + "-" + df['destination']
                 
-                # Count unique routes processed per horizon
-                route_counts = df.groupby('advance_purchase_days')['route'].nunique()
-                for window, count in route_counts.items():
-                    if count >= 6:
-                        completed.add(int(window))
+                for window in REQUIRED_WINDOWS:
+                    if window in df['advance_purchase_days'].values:
+                        routes = df[df['advance_purchase_days'] == window]['route'].unique()
+                        found_routes[window].update(routes)
         except Exception:
             pass
             
-    return completed
+    # Remove found routes from missing
+    for w in REQUIRED_WINDOWS:
+        missing[w] = [r for r in missing[w] if r not in found_routes[w]]
+        if not missing[w]:
+            del missing[w]
+            
+    return missing
 
 
-def run_scraper(script: str, missing: set) -> bool:
+import json
+
+def run_scraper(script: str, missing_targets: dict) -> bool:
     """
-    Invoke a scraper for the given missing windows.
-    --windows accepts comma-separated plain integers (e.g. "1,7,15").
+    Invoke a scraper for the given missing routes using --targets.
     Returns True on success, False on error.
     """
-    if not missing:
+    if not missing_targets:
         return True
 
-    windows_str = ",".join(str(w) for w in sorted(missing))
+    windows_str = ",".join(str(w) for w in sorted(missing_targets.keys()))
+    targets_json = json.dumps(missing_targets)
+    
     base = os.path.dirname(os.path.abspath(__file__))
 
     print(f"\n{'='*62}")
@@ -99,8 +112,8 @@ def run_scraper(script: str, missing: set) -> bool:
 
     # Try xvfb-run first (CI / Linux); fall back for macOS dev machines
     for cmd in (
-        ["xvfb-run", "--auto-servernum", "python3", script, "--windows", windows_str],
-        ["python3", script, "--windows", windows_str],
+        ["xvfb-run", "--auto-servernum", "python3", script, "--targets", targets_json],
+        ["python3", script, "--targets", targets_json],
     ):
         try:
             subprocess.run(cmd, cwd=base, check=True)
@@ -157,13 +170,14 @@ def main():
     status = {}
     all_done = True
     for code, cfg in SCRAPERS.items():
-        completed = get_completed_horizons(cfg["prefix"], today_str)
-        missing   = REQUIRED_WINDOWS - completed
-        status[code] = {"completed": completed, "missing": missing}
+        missing_targets = get_missing_targets(cfg["prefix"], today_str)
+        completed = REQUIRED_WINDOWS - set(missing_targets.keys())
+        status[code] = {"completed": completed, "missing_targets": missing_targets}
+        
         print(f"\n  [{cfg['name']:12s} ({code})]  "
               f"done={sorted(completed) or '—'}   "
-              f"missing={sorted(missing) or '—'}")
-        if missing:
+              f"missing={sorted(missing_targets.keys()) or '—'}")
+        if missing_targets:
             all_done = False
 
     if all_done:
@@ -180,18 +194,18 @@ def main():
 
     for i, code in enumerate(RUN_ORDER):
         cfg     = SCRAPERS[code]
-        missing = status[code]["missing"]
+        missing_targets = status[code]["missing_targets"]
 
-        if not missing:
+        if not missing_targets:
             print(f"\n  ⏭   {cfg['name']} — already complete, skipping.")
             results[code] = True
             continue
 
-        ok = run_scraper(cfg["script"], missing)
+        ok = run_scraper(cfg["script"], missing_targets)
         results[code] = ok
 
         # Cooldown between scrapers (skip after the last active one)
-        remaining_with_work = [c for c in RUN_ORDER[i+1:] if status[c]["missing"]]
+        remaining_with_work = [c for c in RUN_ORDER[i+1:] if status[c]["missing_targets"]]
         if remaining_with_work:
             jitter = random.uniform(-10, 10)
             wait   = max(30, INTER_SCRAPER_COOLDOWN + jitter)
@@ -206,13 +220,13 @@ def main():
     print(f"{'='*62}")
     for code in RUN_ORDER:
         cfg  = SCRAPERS[code]
-        miss = status[code]["missing"]
+        miss = status[code]["missing_targets"]
         if not miss:
             print(f"  ✅  {cfg['name']:12s} — was already complete")
         elif results.get(code):
-            print(f"  ✅  {cfg['name']:12s} — scraped T+{sorted(miss)} successfully")
+            print(f"  ✅  {cfg['name']:12s} — scraped T+{sorted(miss.keys())} successfully")
         else:
-            print(f"  ❌  {cfg['name']:12s} — FAILED for T+{sorted(miss)}")
+            print(f"  ❌  {cfg['name']:12s} — FAILED for T+{sorted(miss.keys())}")
     print()
 
 

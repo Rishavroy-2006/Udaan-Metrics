@@ -314,12 +314,18 @@ def scrape_akasa(origin: str, dest: str, target_date: datetime.date, days_ahead:
 
 def main():
     parser = argparse.ArgumentParser(description="Akasa Air Scraper")
+    parser.add_argument("--targets", type=str, help="JSON dictionary of missing routes per window")
     parser.add_argument("--windows", type=str, default="1,7,15,30,45",
                         help="Comma-separated advance days, e.g. 1,7")
     parser.add_argument("--routes", type=str,
                         default="DEL-BOM,DEL-BLR,BOM-BLR,DEL-CCU,BLR-HYD,MAA-DEL",
                         help="Comma-separated routes e.g. DEL-BOM,DEL-BLR")
     args = parser.parse_args()
+    
+    target_matrix = None
+    if getattr(args, 'targets', None):
+        import json
+        target_matrix = json.loads(args.targets)
 
     # Support both T+1 format and plain int
     raw_windows = [w.strip().replace("T+", "") for w in args.windows.split(",") if w.strip()]
@@ -347,6 +353,9 @@ def main():
         print(f"{'='*60}")
         target_date = today + datetime.timedelta(days=days_ahead)
 
+        if target_matrix and str(days_ahead) in target_matrix:
+            routes_to_run = [tuple(r.split("-")) for r in target_matrix[str(days_ahead)]]
+            
         for origin, dest in routes_to_run:
             print(f"\n--- Scraping T+{days_ahead} ({origin} -> {dest}) ---")
             usable, has_error = scrape_akasa(origin, dest, target_date, days_ahead, csv_path)
@@ -370,4 +379,12 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--targets", type=str)
+    args, _ = parser.parse_known_args()
+    target_matrix = None
+    if getattr(args, 'targets', None):
+        import json
+        target_matrix = json.loads(args.targets)
+    main(target_matrix=target_matrix)
