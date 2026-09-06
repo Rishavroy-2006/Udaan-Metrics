@@ -100,7 +100,7 @@ const RouteHeatmap = () => {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full text-left font-sans text-sm">
+        <table className="w-full text-left font-sans text-sm whitespace-nowrap">
           <thead className="bg-white border-b border-border text-textSecondary">
             <tr>
               {columns.map(col => (

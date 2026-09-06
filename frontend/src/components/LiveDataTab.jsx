@@ -274,7 +274,7 @@ const LiveDataTab = () => {
           </p>
         </div>
         <div className="overflow-x-auto">
-          <table className="w-full text-left font-sans text-sm">
+          <table className="w-full text-left font-sans text-sm whitespace-nowrap">
             <thead className="bg-white border-b border-border text-textSecondary">
               <tr>
                 <th className="px-6 py-4 font-medium uppercase tracking-wider text-xs">Window</th>
@@ -337,7 +337,7 @@ const LiveDataTab = () => {
 
       {/* Bottom Cards & Status */}
       <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-        <div className="border border-border bg-white p-6 min-w-[250px]">
+        <div className="border border-border bg-white p-6 w-full md:w-auto md:min-w-[250px]">
           <p className="text-xs text-textSecondary font-sans mb-1">Secondary metric — excluded from index</p>
           <h4 className="font-serif text-lg text-navy mb-4">Business vs Economy Fare Gap</h4>
           {bizEcoMultiplier !== null ? (

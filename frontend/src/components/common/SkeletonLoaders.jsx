@@ -32,8 +32,8 @@ export const SkeletonChart = ({ height = "h-72", title = true }) => (
 );
 
 export const SkeletonPage = () => (
-  <div className="max-w-6xl mx-auto px-6 py-12 space-y-12 w-full">
-    <div className="border border-border bg-white p-8 flex flex-col md:flex-row gap-6 justify-between">
+  <div className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-12 space-y-6 md:space-y-12 w-full">
+    <div className="border border-border bg-white p-5 md:p-8 flex flex-col md:flex-row gap-6 justify-between">
       <div className="w-full max-w-md space-y-4">
         <SkeletonBase className="h-4 w-1/3" />
         <SkeletonBase className="h-16 w-3/4" />
@@ -50,7 +50,7 @@ export const SkeletonPage = () => (
 );
 
 export const SkeletonGovPortal = () => (
-  <div className="max-w-7xl mx-auto px-6 py-8 space-y-8 w-full">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-8 space-y-6 md:space-y-8 w-full">
     <div className="border-b border-border pb-6 space-y-4">
       <SkeletonBase className="h-6 w-32" />
       <SkeletonBase className="h-10 w-2/3 md:w-1/3" />
@@ -66,7 +66,7 @@ export const SkeletonGovPortal = () => (
 );
 
 export const SkeletonCitizenPortal = () => (
-  <div className="max-w-6xl mx-auto px-6 py-8 space-y-8 w-full">
+  <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 md:py-8 space-y-6 md:space-y-8 w-full">
     <div className="border-b border-border pb-6 space-y-4">
       <SkeletonBase className="h-6 w-32" />
       <SkeletonBase className="h-10 w-2/3 md:w-1/3" />
@@ -84,7 +84,7 @@ export const SkeletonCitizenPortal = () => (
 );
 
 export const SkeletonLiveData = () => (
-  <div className="max-w-7xl mx-auto px-6 py-8 space-y-8 w-full">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-8 space-y-6 md:space-y-8 w-full">
     <div className="border-b border-border pb-6 space-y-4">
       <SkeletonBase className="h-6 w-32" />
       <SkeletonBase className="h-10 w-2/3 md:w-1/3" />

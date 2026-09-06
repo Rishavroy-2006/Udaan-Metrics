@@ -5,13 +5,13 @@ const MethodologyTab = () => {
   const latestDate = new Date().toISOString().slice(0, 10);
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12 space-y-12 animate-fade-in">
+    <div className="max-w-4xl mx-auto px-4 md:px-6 py-6 md:py-12 space-y-12 animate-fade-in">
       
       {/* Data Sources */}
-      <section className="bg-white border border-border p-8">
+      <section className="bg-white border border-border p-5 md:p-8">
         <h2 className="font-serif text-3xl text-navy mb-6">Data Sources</h2>
         <div className="overflow-x-auto">
-          <table className="w-full text-left font-sans text-sm">
+          <table className="w-full text-left font-sans text-sm whitespace-nowrap">
             <thead className="border-b border-border text-textSecondary">
               <tr>
                 <th className="pb-3 font-medium uppercase text-xs">Source Name</th>
@@ -42,7 +42,7 @@ const MethodologyTab = () => {
       </section>
 
       {/* Sampling Protocol */}
-      <section className="bg-steel/10 border border-steel/20 p-8">
+      <section className="bg-steel/10 border border-steel/20 p-5 md:p-8">
         <h2 className="font-serif text-3xl text-navy mb-4">Sampling Protocol</h2>
         <p className="font-sans text-lg text-textPrimary">
           Lowest available economy fare across all flights for a route/date, sampled daily at 10:00 IST.
@@ -50,7 +50,7 @@ const MethodologyTab = () => {
       </section>
 
       {/* Data Cleaning Rules */}
-      <section className="bg-white border border-border p-8">
+      <section className="bg-white border border-border p-5 md:p-8">
         <h2 className="font-serif text-3xl text-navy mb-6">Data Cleaning Rules</h2>
         <ul className="space-y-4 font-sans text-textPrimary list-disc pl-5">
           <li className="leading-relaxed">
@@ -66,7 +66,7 @@ const MethodologyTab = () => {
       </section>
 
       {/* Index Formula */}
-      <section className="bg-white border border-border p-8">
+      <section className="bg-white border border-border p-5 md:p-8">
         <h2 className="font-serif text-3xl text-navy mb-2">Index Formula</h2>
         <p className="font-sans text-xs text-textSecondary mb-6">
           Status: Active. The Laspeyres-style index computation engine is fully built and actively weights routes against a configuration file (DGCA_ROUTE_WEIGHTS). For this demo, the file is populated with estimated placeholder weights (e.g., DEL-BOM at 25%), not yet sourced from an official DGCA traffic report. In production, MoSPI would populate this config with exact passenger-volume figures from official monthly DGCA traffic reports to yield the verified index.

@@ -118,7 +118,7 @@ const ContributionBreakdown = () => {
 
       {/* Legend / Table */}
       <div className="mt-4 overflow-x-auto">
-        <table className="w-full text-left font-sans text-sm">
+        <table className="w-full text-left font-sans text-sm whitespace-nowrap">
           <thead className="border-b border-border text-textSecondary">
             <tr>
               <th className="pb-2 font-medium uppercase text-xs">Route</th>

@@ -23,7 +23,7 @@ import RouteHeatmap from './gov/RouteHeatmap.jsx';
 const GovernmentDashboard = () => {
   return (
     <ProtectedRoute>
-      <div className="max-w-7xl mx-auto px-6 py-8 space-y-8 animate-fade-in">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-8 space-y-8 animate-fade-in">
 
         {/* Portal Header */}
         <div className="border-b border-border pb-6">

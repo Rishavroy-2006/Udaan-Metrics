@@ -2,10 +2,10 @@ import React from 'react';
 
 const AboutTab = () => {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16 space-y-16 animate-fade-in text-center">
+    <div className="max-w-3xl mx-auto px-4 md:px-6 py-10 md:py-16 space-y-10 md:space-y-16 animate-fade-in text-center">
       
       <section>
-        <h1 className="font-serif text-4xl md:text-5xl text-navy font-bold mb-4">Udaan Metrics — Real-time Airfare Price Index</h1>
+        <h1 className="font-serif text-3xl md:text-5xl text-navy font-bold mb-4">Udaan Metrics — Real-time Airfare Price Index</h1>
         <p className="font-sans text-textSecondary text-lg max-w-2xl mx-auto leading-relaxed">
           SIH Problem Statement 26056 &middot; MoSPI &middot; Data Informatics & Innovation Division &middot; Theme: Smart Automation
         </p>
