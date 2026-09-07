@@ -312,7 +312,7 @@ def scrape_akasa(origin: str, dest: str, target_date: datetime.date, days_ahead:
     return usable, has_error
 
 
-def main():
+def main(target_matrix=None):
     parser = argparse.ArgumentParser(description="Akasa Air Scraper")
     parser.add_argument("--targets", type=str, help="JSON dictionary of missing routes per window")
     parser.add_argument("--windows", type=str, default="1,7,15,30,45",
