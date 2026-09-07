@@ -308,10 +308,10 @@ def run(target_windows=None, target_matrix=None):
         with SB(uc=True) as sb:
             # Inner loop: Routes
             routes_to_scrape = ROUTES
-        if target_matrix and str(advance_days) in target_matrix:
-            routes_to_scrape = [tuple(r.split("-")) for r in target_matrix[str(advance_days)]]
-            
-        for idx, (origin, dest) in enumerate(routes_to_scrape):
+            if target_matrix and str(advance_days) in target_matrix:
+                routes_to_scrape = [tuple(r.split("-")) for r in target_matrix[str(advance_days)]]
+                
+            for idx, (origin, dest) in enumerate(routes_to_scrape):
                 print(f"\n--- Scraping T+{advance_days} ({origin} -> {dest}) ---")
                 
                 try:
