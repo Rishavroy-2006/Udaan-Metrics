@@ -37,7 +37,7 @@ const Header = ({ lastUpdated }) => {
         </nav>
       </div>
       <div className="text-xs font-sans text-gray-400">
-        Data as of: {lastUpdated ? new Date(lastUpdated).toLocaleString() : <SkeletonText className="inline-block h-3 w-32 ml-1 align-middle" />}
+        Data as of: {lastUpdated ? new Date(lastUpdated).toLocaleDateString() : <SkeletonText className="inline-block h-3 w-32 ml-1 align-middle" />}
       </div>
     </header>
   );
