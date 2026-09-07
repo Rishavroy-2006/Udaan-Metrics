@@ -229,12 +229,21 @@ def main():
             print(f"  ❌  {cfg['name']:12s} — FAILED for T+{sorted(miss.keys())}")
             
     print(f"\n{'='*62}")
-    print("  TRIGGERING INDEX COMPUTATION")
+    print("  TRIGGERING INDEX COMPUTATION & DATA PIPELINES")
     print(f"{'='*62}")
     try:
+        print("Running legacy CSV index generator (compute_daily_index.py)...")
         subprocess.run(["python3", "compute_daily_index.py", "--date", today_str], check=True)
     except Exception as e:
         print(f"  ❌  Failed to trigger compute_daily_index.py: {e}")
+        
+    try:
+        print("\nRunning master parquet analytics pipeline (core/run_pipeline.py)...")
+        env = os.environ.copy()
+        env["PYTHONPATH"] = "."
+        subprocess.run(["python3", "core/run_pipeline.py"], env=env, check=True)
+    except Exception as e:
+        print(f"  ❌  Failed to trigger core/run_pipeline.py: {e}")
         
     print()
 
