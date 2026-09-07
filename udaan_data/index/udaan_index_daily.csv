@@ -10258,3 +10258,218 @@ DEL,BLR,GOI,Goibibo,none,2026-09-07,1,economy,,,,False,unknown,parse_error,2026-
 BOM,BLR,GOI,Goibibo,none,2026-09-07,1,economy,,,,False,unknown,parse_error,2026-09-06T22:29:56.497122+05:30,GOIBIBO_RUN_20260906_222956,ota,Goibibo,False
 DEL,CCU,GOI,Goibibo,none,2026-09-07,1,economy,,,,False,unknown,parse_error,2026-09-06T22:35:38.120041+05:30,GOIBIBO_RUN_20260906_223538,ota,Goibibo,False
 BLR,HYD,GOI,Goibibo,none,2026-09-07,1,economy,,,,False,unknown,parse_error,2026-09-06T22:40:17.074889+05:30,GOIBIBO_RUN_20260906_224017,ota,Goibibo,False
+DEL,BOM,6E,IndiGo,inf,2026-09-08,1,economy,,,16715.0,False,21:45,ok,2026-09-07T00:57:35.812280+05:30,2026-09-07_0057IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-09-08,1,business,,,28443.0,False,17:00,ok,2026-09-07T00:57:35.812280+05:30,2026-09-07_0057IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-09-08,1,business,,,33500.0,False,20:00,ok,2026-09-07T00:57:35.812280+05:30,2026-09-07_0057IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-09-08,1,economy,,,14720.0,False,20:00,ok,2026-09-07T00:57:35.812280+05:30,2026-09-07_0057IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-09-08,1,economy,,,10675.0,False,07:05,ok,2026-09-07T00:58:42.170819+05:30,2026-09-07_0058IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-09-08,1,business,,,29942.0,False,03:00,ok,2026-09-07T00:58:42.170819+05:30,2026-09-07_0058IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-09-08,1,economy,,,5253.0,False,12:30,ok,2026-09-07T00:59:49.627131+05:30,2026-09-07_0059IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-09-08,1,business,,,22488.0,False,21:30,ok,2026-09-07T00:59:49.627131+05:30,2026-09-07_0059IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6.000000000000001e+230,2026-09-08,1,economy,,,19604.0,False,13:55,ok,2026-09-07T00:59:49.627131+05:30,2026-09-07_0059IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+240,2026-09-08,1,economy,,,7210.0,False,15:45,ok,2026-09-07T00:59:49.627131+05:30,2026-09-07_0059IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-09-08,1,economy,,,9552.0,False,10:15,ok,2026-09-07T01:01:00.878355+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-09-08,1,business,,,33806.0,False,02:25,ok,2026-09-07T01:01:00.878355+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-09-08,1,business,,,26140.0,False,23:30,ok,2026-09-07T01:01:00.878355+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-09-08,1,economy,,,8502.0,False,23:30,ok,2026-09-07T01:01:00.878355+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-09-08,1,business,,,34632.0,False,07:10,ok,2026-09-07T01:01:00.878355+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-09-08,1,economy,,,22739.0,False,07:10,ok,2026-09-07T01:01:00.878355+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,inf,2026-09-08,1,economy,,,5861.0,False,12:50,ok,2026-09-07T01:01:58.377581+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+116,2026-09-08,1,economy,,,5486.0,False,23:05,ok,2026-09-07T01:01:58.377581+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+182,2026-09-08,1,economy,,,5861.0,False,15:00,ok,2026-09-07T01:01:58.377581+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+105,2026-09-08,1,economy,,,24186.0,False,18:50,ok,2026-09-07T01:01:58.377581+05:30,2026-09-07_0101IST,airline_direct,IndiGo,True
+BLR,HYD,6E,IndiGo,5.9999999999999995e+109,2026-09-08,1,economy,,,10554.0,False,17:00,ok,2026-09-07T01:01:58.377581+05:30,2026-09-07_0101IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+193,2026-09-08,1,economy,,,10376.0,False,20:00,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-09-08,1,economy,,,10586.0,False,12:45,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-09-08,1,business,,,39741.0,False,12:45,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-09-08,1,economy,,,9619.0,False,03:10,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-09-08,1,business,,,33135.0,False,16:35,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-09-08,1,economy,,,16335.0,False,16:35,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+189,2026-09-08,1,economy,,,21747.0,False,19:05,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6.000000000000001e+244,2026-09-08,1,economy,,,29888.0,False,03:55,ok,2026-09-07T01:03:05.085215+05:30,2026-09-07_0103IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-09-14,7,business,,,24260.0,False,18:00,ok,2026-09-07T01:04:10.512420+05:30,2026-09-07_0104IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-09-14,7,economy,,,6431.0,False,21:45,ok,2026-09-07T01:04:10.512420+05:30,2026-09-07_0104IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-09-14,7,business,,,24260.0,False,20:00,ok,2026-09-07T01:04:10.512420+05:30,2026-09-07_0104IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-09-14,7,economy,,,7003.0,False,20:00,ok,2026-09-07T01:04:10.512420+05:30,2026-09-07_0104IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-09-14,7,economy,,,11873.0,False,17:00,ok,2026-09-07T01:05:21.926816+05:30,2026-09-07_0105IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-09-14,7,business,,,30402.0,False,09:55,ok,2026-09-07T01:05:21.926816+05:30,2026-09-07_0105IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,6e+176,2026-09-14,7,economy,,,11873.0,False,13:15,ok,2026-09-07T01:05:21.926816+05:30,2026-09-07_0105IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,6e+176,2026-09-14,7,business,,,29942.0,False,13:15,ok,2026-09-07T01:05:21.926816+05:30,2026-09-07_0105IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-09-14,7,economy,,,7374.0,False,00:30,ok,2026-09-07T01:06:34.444690+05:30,2026-09-07_0106IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-09-14,7,business,,,26061.0,False,11:45,ok,2026-09-07T01:06:34.444690+05:30,2026-09-07_0106IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6.000000000000001e+136,2026-09-14,7,business,,,26046.0,False,04:05,ok,2026-09-07T01:06:34.444690+05:30,2026-09-07_0106IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6.000000000000001e+136,2026-09-14,7,economy,,,7584.0,False,04:05,ok,2026-09-07T01:06:34.444690+05:30,2026-09-07_0106IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+261,2026-09-14,7,economy,,,7243.0,False,11:20,ok,2026-09-07T01:06:34.444690+05:30,2026-09-07_0106IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6.000000000000001e+230,2026-09-14,7,economy,,,8377.0,False,13:55,ok,2026-09-07T01:06:34.444690+05:30,2026-09-07_0106IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+240,2026-09-14,7,economy,,,7584.0,False,15:45,ok,2026-09-07T01:06:34.444690+05:30,2026-09-07_0106IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-09-14,7,economy,,,7586.0,False,05:00,ok,2026-09-07T01:07:40.452394+05:30,2026-09-07_0107IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-09-14,7,business,,,26140.0,False,05:00,ok,2026-09-07T01:07:40.452394+05:30,2026-09-07_0107IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-09-14,7,business,,,26140.0,False,23:30,ok,2026-09-07T01:07:40.452394+05:30,2026-09-07_0107IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-09-14,7,economy,,,8502.0,False,23:30,ok,2026-09-07T01:07:40.452394+05:30,2026-09-07_0107IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-09-14,7,business,,,32272.0,False,07:10,ok,2026-09-07T01:07:40.452394+05:30,2026-09-07_0107IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-09-14,7,economy,,,7927.0,False,07:10,ok,2026-09-07T01:07:40.452394+05:30,2026-09-07_0107IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,inf,2026-09-14,7,economy,,,5463.0,False,11:40,ok,2026-09-07T01:08:45.387503+05:30,2026-09-07_0108IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+173,2026-09-14,7,economy,,,5463.0,False,15:30,ok,2026-09-07T01:08:45.387503+05:30,2026-09-07_0108IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+105,2026-09-14,7,economy,,,5463.0,False,18:45,ok,2026-09-07T01:08:45.387503+05:30,2026-09-07_0108IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+116,2026-09-14,7,economy,,,8429.0,False,23:05,ok,2026-09-07T01:08:45.387503+05:30,2026-09-07_0108IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,5.9999999999999995e+109,2026-09-14,7,economy,,,7935.0,False,17:00,ok,2026-09-07T01:08:45.387503+05:30,2026-09-07_0108IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-09-14,7,economy,,,9778.0,False,12:00,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-09-14,7,business,,,32235.0,False,16:10,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-09-14,7,economy,,,9778.0,False,16:35,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-09-14,7,business,,,31483.0,False,16:35,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+193,2026-09-14,7,economy,,,9778.0,False,20:00,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-09-14,7,economy,,,9778.0,False,03:10,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6.000000000000001e+244,2026-09-14,7,economy,,,9778.0,False,03:55,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+189,2026-09-14,7,business,,,35943.0,False,19:05,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+189,2026-09-14,7,economy,,,9857.0,False,19:05,ok,2026-09-07T01:09:47.181688+05:30,2026-09-07_0109IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-09-22,15,economy,,,6357.0,False,06:05,ok,2026-09-07T01:10:46.768340+05:30,2026-09-07_0110IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-09-22,15,business,,,21900.0,False,07:15,ok,2026-09-07T01:10:46.768340+05:30,2026-09-07_0110IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-09-22,15,business,,,26083.0,False,20:00,ok,2026-09-07T01:10:46.768340+05:30,2026-09-07_0110IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-09-22,15,economy,,,6688.0,False,20:00,ok,2026-09-07T01:10:46.768340+05:30,2026-09-07_0110IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-09-22,15,business,,,26048.0,False,18:20,ok,2026-09-07T01:11:51.596955+05:30,2026-09-07_0111IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-09-22,15,economy,,,9613.0,False,10:45,ok,2026-09-07T01:11:51.596955+05:30,2026-09-07_0111IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-09-22,15,economy,,,5253.0,False,09:05,ok,2026-09-07T01:12:55.827923+05:30,2026-09-07_0112IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-09-22,15,business,,,18948.0,False,21:30,ok,2026-09-07T01:12:55.827923+05:30,2026-09-07_0112IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6.000000000000001e+230,2026-09-22,15,economy,,,9422.0,False,13:55,ok,2026-09-07T01:12:55.827923+05:30,2026-09-07_0112IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+261,2026-09-22,15,economy,,,11109.0,False,11:20,ok,2026-09-07T01:12:55.827923+05:30,2026-09-07_0112IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+240,2026-09-22,15,economy,,,5463.0,False,15:45,ok,2026-09-07T01:12:55.827923+05:30,2026-09-07_0112IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-09-22,15,economy,,,7920.0,False,16:15,ok,2026-09-07T01:14:00.884862+05:30,2026-09-07_0114IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-09-22,15,business,,,28201.0,False,23:15,ok,2026-09-07T01:14:00.884862+05:30,2026-09-07_0114IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-09-22,15,economy,,,16140.0,False,07:10,ok,2026-09-07T01:14:00.884862+05:30,2026-09-07_0114IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-09-22,15,business,,,28673.0,False,07:10,ok,2026-09-07T01:14:00.884862+05:30,2026-09-07_0114IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-09-22,15,economy,,,8502.0,False,23:30,ok,2026-09-07T01:14:00.884862+05:30,2026-09-07_0114IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-09-22,15,business,,,22600.0,False,23:30,ok,2026-09-07T01:14:00.884862+05:30,2026-09-07_0114IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+182,2026-09-22,15,economy,,,4553.0,False,15:00,ok,2026-09-07T01:15:06.262688+05:30,2026-09-07_0115IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,inf,2026-09-22,15,economy,,,4553.0,False,12:50,ok,2026-09-07T01:15:06.262688+05:30,2026-09-07_0115IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,5.9999999999999995e+109,2026-09-22,15,economy,,,5146.0,False,17:00,ok,2026-09-07T01:15:06.262688+05:30,2026-09-07_0115IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+105,2026-09-22,15,economy,,,5146.0,False,18:50,ok,2026-09-07T01:15:06.262688+05:30,2026-09-07_0115IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+116,2026-09-22,15,economy,,,6724.0,False,23:05,ok,2026-09-07T01:15:06.262688+05:30,2026-09-07_0115IST,airline_direct,IndiGo,True
+MAA,DEL,6E,IndiGo,inf,2026-09-22,15,economy,,,9619.0,False,11:10,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-09-22,15,business,,,27587.0,False,22:20,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-09-22,15,economy,,,9619.0,False,16:35,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-09-22,15,business,,,28061.0,False,16:35,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6.000000000000001e+244,2026-09-22,15,economy,,,9619.0,False,03:55,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-09-22,15,economy,,,9619.0,False,03:10,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-09-22,15,business,,,27587.0,False,03:10,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+189,2026-09-22,15,economy,,,14201.0,False,19:05,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+193,2026-09-22,15,economy,,,10376.0,False,20:00,ok,2026-09-07T01:16:13.089898+05:30,2026-09-07_0116IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-10-07,30,business,,,21900.0,False,07:15,ok,2026-09-07T01:17:21.716082+05:30,2026-09-07_0117IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-10-07,30,economy,,,6431.0,False,08:00,ok,2026-09-07T01:17:21.716082+05:30,2026-09-07_0117IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-10-07,30,business,,,21900.0,False,20:00,ok,2026-09-07T01:17:21.716082+05:30,2026-09-07_0117IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-10-07,30,economy,,,7003.0,False,20:00,ok,2026-09-07T01:17:21.716082+05:30,2026-09-07_0117IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-10-07,30,economy,,,9128.0,False,15:45,ok,2026-09-07T01:18:27.432934+05:30,2026-09-07_0118IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-10-07,30,business,,,26048.0,False,22:00,ok,2026-09-07T01:18:27.432934+05:30,2026-09-07_0118IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,6e+176,2026-10-07,30,business,,,26048.0,False,13:15,ok,2026-09-07T01:18:27.432934+05:30,2026-09-07_0118IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,6e+176,2026-10-07,30,economy,,,8671.0,False,13:15,ok,2026-09-07T01:18:27.432934+05:30,2026-09-07_0118IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+261,2026-10-07,30,economy,,,5122.0,False,11:20,ok,2026-09-07T01:19:31.666102+05:30,2026-09-07_0119IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-10-07,30,economy,,,6747.0,False,19:50,ok,2026-09-07T01:19:31.666102+05:30,2026-09-07_0119IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-10-07,30,business,,,18948.0,False,19:50,ok,2026-09-07T01:19:31.666102+05:30,2026-09-07_0119IST,airline_direct,IndiGo,True
+BOM,BLR,6E,IndiGo,6.000000000000001e+230,2026-10-07,30,economy,,,6369.0,False,13:55,ok,2026-09-07T01:19:31.666102+05:30,2026-09-07_0119IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+240,2026-10-07,30,economy,,,5840.0,False,15:45,ok,2026-09-07T01:19:31.666102+05:30,2026-09-07_0119IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-10-07,30,economy,,,10077.0,False,17:55,ok,2026-09-07T01:20:33.980848+05:30,2026-09-07_0120IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-10-07,30,business,,,22600.0,False,16:00,ok,2026-09-07T01:20:33.980848+05:30,2026-09-07_0120IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-10-07,30,business,,,22600.0,False,23:30,ok,2026-09-07T01:20:33.980848+05:30,2026-09-07_0120IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-10-07,30,economy,,,9080.0,False,23:30,ok,2026-09-07T01:20:33.980848+05:30,2026-09-07_0120IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-10-07,30,economy,,,7920.0,False,07:10,ok,2026-09-07T01:20:33.980848+05:30,2026-09-07_0120IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-10-07,30,business,,,30797.0,False,07:10,ok,2026-09-07T01:20:33.980848+05:30,2026-09-07_0120IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,inf,2026-10-07,30,economy,,,4553.0,False,15:35,ok,2026-09-07T01:21:36.410605+05:30,2026-09-07_0121IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,5.9999999999999995e+109,2026-10-07,30,economy,,,5861.0,False,17:00,ok,2026-09-07T01:21:36.410605+05:30,2026-09-07_0121IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+105,2026-10-07,30,economy,,,5486.0,False,18:50,ok,2026-09-07T01:21:36.410605+05:30,2026-09-07_0121IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+116,2026-10-07,30,economy,,,5146.0,False,23:05,ok,2026-09-07T01:21:36.410605+05:30,2026-09-07_0121IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-10-07,30,economy,,,8930.0,False,07:10,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6.000000000000001e+244,2026-10-07,30,economy,,,8930.0,False,03:55,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-10-07,30,business,,,28061.0,False,05:40,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-10-07,30,business,,,28533.0,False,16:35,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+183,2026-10-07,30,economy,,,8930.0,False,16:35,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+193,2026-10-07,30,economy,,,8930.0,False,20:00,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-10-07,30,business,,,28061.0,False,03:10,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-10-07,30,economy,,,8930.0,False,03:10,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+189,2026-10-07,30,economy,,,9009.0,False,19:05,ok,2026-09-07T01:22:43.625691+05:30,2026-09-07_0122IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-10-22,45,business,,,21900.0,False,22:45,ok,2026-09-07T01:23:51.897075+05:30,2026-09-07_0123IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,inf,2026-10-22,45,economy,,,6546.0,False,22:45,ok,2026-09-07T01:23:51.897075+05:30,2026-09-07_0123IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-10-22,45,business,,,21900.0,False,20:00,ok,2026-09-07T01:23:51.897075+05:30,2026-09-07_0123IST,airline_direct,IndiGo,False
+DEL,BOM,6E,IndiGo,6.000000000000001e+303,2026-10-22,45,economy,,,6696.0,False,20:00,ok,2026-09-07T01:23:51.897075+05:30,2026-09-07_0123IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-10-22,45,economy,,,10669.0,False,20:45,ok,2026-09-07T01:24:57.668732+05:30,2026-09-07_0124IST,airline_direct,IndiGo,False
+DEL,BLR,6E,IndiGo,inf,2026-10-22,45,business,,,25312.0,False,02:25,ok,2026-09-07T01:24:57.668732+05:30,2026-09-07_0124IST,airline_direct,IndiGo,True
+DEL,BLR,6E,IndiGo,6e+176,2026-10-22,45,business,,,26048.0,False,13:15,ok,2026-09-07T01:24:57.668732+05:30,2026-09-07_0124IST,airline_direct,IndiGo,True
+DEL,BLR,6E,IndiGo,6e+176,2026-10-22,45,economy,,,10669.0,False,13:15,ok,2026-09-07T01:24:57.668732+05:30,2026-09-07_0124IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-10-22,45,economy,,,7797.0,False,14:30,ok,2026-09-07T01:26:06.757681+05:30,2026-09-07_0126IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+261,2026-10-22,45,economy,,,7243.0,False,11:20,ok,2026-09-07T01:26:06.757681+05:30,2026-09-07_0126IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6.000000000000001e+230,2026-10-22,45,economy,,,7243.0,False,13:55,ok,2026-09-07T01:26:06.757681+05:30,2026-09-07_0126IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,inf,2026-10-22,45,business,,,18948.0,False,12:30,ok,2026-09-07T01:26:06.757681+05:30,2026-09-07_0126IST,airline_direct,IndiGo,True
+BOM,BLR,6E,IndiGo,6.000000000000001e+136,2026-10-22,45,business,,,26124.0,False,04:05,ok,2026-09-07T01:26:06.757681+05:30,2026-09-07_0126IST,airline_direct,IndiGo,True
+BOM,BLR,6E,IndiGo,6.000000000000001e+136,2026-10-22,45,economy,,,10838.0,False,04:05,ok,2026-09-07T01:26:06.757681+05:30,2026-09-07_0126IST,airline_direct,IndiGo,False
+BOM,BLR,6E,IndiGo,6e+240,2026-10-22,45,economy,,,7584.0,False,15:45,ok,2026-09-07T01:26:06.757681+05:30,2026-09-07_0126IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-10-22,45,economy,,,18792.0,False,16:00,ok,2026-09-07T01:27:18.643951+05:30,2026-09-07_0127IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,inf,2026-10-22,45,business,,,22600.0,False,16:00,ok,2026-09-07T01:27:18.643951+05:30,2026-09-07_0127IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-10-22,45,business,,,22600.0,False,23:30,ok,2026-09-07T01:27:18.643951+05:30,2026-09-07_0127IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+247,2026-10-22,45,economy,,,12230.0,False,23:30,ok,2026-09-07T01:27:18.643951+05:30,2026-09-07_0127IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-10-22,45,business,,,28201.0,False,07:10,ok,2026-09-07T01:27:18.643951+05:30,2026-09-07_0127IST,airline_direct,IndiGo,False
+DEL,CCU,6E,IndiGo,6e+203,2026-10-22,45,economy,,,15449.0,False,07:10,ok,2026-09-07T01:27:18.643951+05:30,2026-09-07_0127IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,inf,2026-10-22,45,economy,,,5463.0,False,08:05,ok,2026-09-07T01:28:19.821128+05:30,2026-09-07_0128IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,5.9999999999999995e+109,2026-10-22,45,economy,,,5463.0,False,17:00,ok,2026-09-07T01:28:19.821128+05:30,2026-09-07_0128IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+105,2026-10-22,45,economy,,,5463.0,False,18:50,ok,2026-09-07T01:28:19.821128+05:30,2026-09-07_0128IST,airline_direct,IndiGo,False
+BLR,HYD,6E,IndiGo,6e+116,2026-10-22,45,economy,,,5463.0,False,23:05,ok,2026-09-07T01:28:19.821128+05:30,2026-09-07_0128IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-10-22,45,business,,,26457.0,False,09:05,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,inf,2026-10-22,45,economy,,,9778.0,False,09:30,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6.000000000000001e+244,2026-10-22,45,economy,,,9778.0,False,03:55,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+193,2026-10-22,45,business,,,26457.0,False,20:00,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+193,2026-10-22,45,economy,,,9778.0,False,20:00,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-10-22,45,economy,,,9778.0,False,03:10,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+253,2026-10-22,45,business,,,28061.0,False,03:10,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+264,2026-10-22,45,business,,,36667.0,False,23:20,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+264,2026-10-22,45,economy,,,22231.0,False,23:20,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+189,2026-10-22,45,business,,,30837.0,False,19:05,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+MAA,DEL,6E,IndiGo,6e+189,2026-10-22,45,economy,,,9857.0,False,19:05,ok,2026-09-07T01:29:19.716516+05:30,2026-09-07_0129IST,airline_direct,IndiGo,False
+DEL,BOM,AI,Air India,error,2026-09-07,1,economy,,,,False,unknown,error,2026-09-07T01:31:56.268852+05:30,2026-09-07_0131IST,airline_direct,Air India,False
+DEL,BLR,AI,Air India,error,2026-09-07,1,economy,,,,False,unknown,error,2026-09-07T01:32:25.678578+05:30,2026-09-07_0132IST,airline_direct,Air India,False
+BOM,BLR,AI,Air India,error,2026-09-07,1,economy,,,,False,unknown,error,2026-09-07T01:32:46.646687+05:30,2026-09-07_0132IST,airline_direct,Air India,False
+DEL,CCU,AI,Air India,error,2026-09-07,1,economy,,,,False,unknown,error,2026-09-07T01:33:24.267063+05:30,2026-09-07_0133IST,airline_direct,Air India,False
+BLR,HYD,AI,Air India,error,2026-09-07,1,economy,,,,False,unknown,error,2026-09-07T01:33:56.888207+05:30,2026-09-07_0133IST,airline_direct,Air India,False
+DEL,BOM,SG,SpiceJet,SG 802,2026-09-08,1,economy,,,6447.0,False,22:30,ok,2026-09-07T01:34:51.790749+05:30,2026-09-07_0134IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-08,1,economy,,,10161.0,False,19:55,ok,2026-09-07T01:34:51.790749+05:30,2026-09-07_0134IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,unknown,2026-09-08,1,unknown,,,,False,unknown,no_flights,2026-09-07T01:35:42.375774+05:30,2026-09-07_0134IST,airline_direct,SpiceJet,False
+BOM,BLR,SG,SpiceJet,unknown,2026-09-08,1,unknown,,,,False,unknown,no_flights,2026-09-07T01:36:33.468963+05:30,2026-09-07_0134IST,airline_direct,SpiceJet,False
+DEL,CCU,SG,SpiceJet,unknown,2026-09-08,1,unknown,,,,False,unknown,no_flights,2026-09-07T01:37:27.438773+05:30,2026-09-07_0134IST,airline_direct,SpiceJet,False
+BLR,HYD,SG,SpiceJet,unknown,2026-09-08,1,unknown,,,,False,unknown,no_flights,2026-09-07T01:38:29.187723+05:30,2026-09-07_0134IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,unknown,2026-10-22,45,unknown,,,,False,unknown,no_flights,2026-09-07T01:56:22.076499+05:30,2026-09-07_0134IST,airline_direct,SpiceJet,False
+DEL,BOM,AI,Air India,error,2026-09-08,1,economy,,,,False,unknown,error,2026-09-07T12:05:13.581269+05:30,2026-09-07_1205IST,airline_direct,Air India,False
+DEL,BLR,AI,Air India,error,2026-09-08,1,economy,,,,False,unknown,error,2026-09-07T12:05:48.902078+05:30,2026-09-07_1205IST,airline_direct,Air India,False
+BOM,BLR,AI,Air India,error,2026-09-08,1,economy,,,,False,unknown,error,2026-09-07T12:06:15.071816+05:30,2026-09-07_1206IST,airline_direct,Air India,False
+DEL,CCU,AI,Air India,error,2026-09-08,1,economy,,,,False,unknown,error,2026-09-07T12:06:51.413098+05:30,2026-09-07_1206IST,airline_direct,Air India,False
+BLR,HYD,AI,Air India,error,2026-09-08,1,economy,,,,False,unknown,error,2026-09-07T12:07:11.550736+05:30,2026-09-07_1207IST,airline_direct,Air India,False
+MAA,DEL,SG,SpiceJet,unknown,2026-09-08,1,unknown,,,,False,unknown,parse_error,2026-09-07T12:08:15.535913+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-14,7,economy,,,19359.0,False,19:55,ok,2026-09-07T12:09:06.449990+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 802,2026-09-14,7,economy,,,10161.0,False,22:30,ok,2026-09-07T12:09:06.449990+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,unknown,2026-09-14,7,unknown,,,,False,unknown,no_flights,2026-09-07T12:09:56.678426+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BOM,BLR,SG,SpiceJet,unknown,2026-09-14,7,unknown,,,,False,unknown,no_flights,2026-09-07T12:10:45.804507+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,CCU,SG,SpiceJet,unknown,2026-09-14,7,unknown,,,,False,unknown,no_flights,2026-09-07T12:11:37.008698+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BLR,HYD,SG,SpiceJet,unknown,2026-09-14,7,unknown,,,,False,unknown,no_flights,2026-09-07T12:12:32.635177+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+MAA,DEL,SG,SpiceJet,unknown,2026-09-14,7,unknown,,,,False,unknown,no_flights,2026-09-07T12:13:29.926330+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-22,15,economy,,,7469.0,False,19:55,ok,2026-09-07T12:14:22.678294+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 802,2026-09-22,15,economy,,,7889.0,False,22:30,ok,2026-09-07T12:14:22.678294+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,unknown,2026-09-22,15,unknown,,,,False,unknown,no_flights,2026-09-07T12:15:23.584490+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BOM,BLR,SG,SpiceJet,unknown,2026-09-22,15,unknown,,,,False,unknown,no_flights,2026-09-07T12:16:20.288239+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,CCU,SG,SpiceJet,unknown,2026-09-22,15,unknown,,,,False,unknown,no_flights,2026-09-07T12:17:10.746415+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BLR,HYD,SG,SpiceJet,unknown,2026-09-22,15,unknown,,,,False,unknown,no_flights,2026-09-07T12:17:58.332470+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+MAA,DEL,SG,SpiceJet,unknown,2026-09-22,15,unknown,,,,False,unknown,no_flights,2026-09-07T12:18:50.685234+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 9091,2026-10-07,30,economy,,,6447.0,False,04:30,ok,2026-09-07T12:19:43.450472+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-07,30,economy,,,7158.0,False,19:55,ok,2026-09-07T12:19:43.450472+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-07,30,economy,,,7759.0,False,22:30,ok,2026-09-07T12:19:43.450472+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,unknown,2026-10-07,30,unknown,,,,False,unknown,no_flights,2026-09-07T12:20:42.884533+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BOM,BLR,SG,SpiceJet,unknown,2026-10-07,30,unknown,,,,False,unknown,no_flights,2026-09-07T12:21:33.496595+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-07,30,economy,,,8333.0,False,20:10,ok,2026-09-07T12:22:27.254311+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BLR,HYD,SG,SpiceJet,unknown,2026-10-07,30,unknown,,,,False,unknown,no_flights,2026-09-07T12:23:16.469707+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+MAA,DEL,SG,SpiceJet,unknown,2026-10-07,30,unknown,,,,False,unknown,no_flights,2026-09-07T12:24:08.928589+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-22,45,economy,,,8641.0,False,22:30,ok,2026-09-07T12:25:08.380265+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-22,45,economy,,,7842.0,False,19:55,ok,2026-09-07T12:25:08.380265+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,SG 142,2026-10-22,45,economy,,,9762.0,False,20:50,ok,2026-09-07T12:25:55.524786+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,SG 614,2026-10-22,45,economy,,,9342.0,False,06:30,ok,2026-09-07T12:25:55.524786+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,SG 646,2026-10-22,45,economy,,,11098.0,False,13:20,ok,2026-09-07T12:25:55.524786+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,BLR,SG,SpiceJet,SG 802,2026-10-22,45,economy,,,12701.0,False,22:30,ok,2026-09-07T12:25:55.524786+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BOM,BLR,SG,SpiceJet,SG 487,2026-10-22,45,economy,,,5408.0,False,20:40,ok,2026-09-07T12:26:53.480314+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BOM,BLR,SG,SpiceJet,SG 669,2026-10-22,45,economy,,,5408.0,False,00:30,ok,2026-09-07T12:26:53.480314+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BOM,BLR,SG,SpiceJet,SG 642,2026-10-22,45,economy,,,5721.0,False,16:00,ok,2026-09-07T12:26:53.480314+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-22,45,economy,,,9957.0,False,20:10,ok,2026-09-07T12:27:54.668914+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+BLR,HYD,SG,SpiceJet,unknown,2026-10-22,45,unknown,,,,False,unknown,no_flights,2026-09-07T12:29:42.323988+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
+MAA,DEL,SG,SpiceJet,unknown,2026-10-22,45,unknown,,,,False,unknown,no_flights,2026-09-07T12:31:33.533517+05:30,2026-09-07_1208IST,airline_direct,SpiceJet,False
