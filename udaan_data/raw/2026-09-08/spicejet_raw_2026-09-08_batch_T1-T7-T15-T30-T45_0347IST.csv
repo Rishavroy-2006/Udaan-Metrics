@@ -1,0 +1,70 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BOM,SG,SpiceJet,SG 9091,2026-09-09,1,economy,,,6447.0,False,05:30,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 9091,2026-09-09,1,economy,,,6867.0,False,05:30,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 9091,2026-09-09,1,economy,,,7759.0,False,05:30,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-09-09,1,economy,,,6738.0,False,22:30,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-09-09,1,economy,,,7158.0,False,22:30,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-09-09,1,economy,,,8052.0,False,22:30,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-09,1,economy,,,10618.0,False,19:55,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-09,1,economy,,,11038.0,False,19:55,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-09,1,economy,,,11930.0,False,19:55,ok,2026-09-08T03:47:41.303761+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BLR,SG,SpiceJet,unknown,2026-09-09,1,unknown,,,,False,unknown,no_flights,2026-09-08T03:48:38.625657+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,unknown,2026-09-09,1,unknown,,,,False,unknown,no_flights,2026-09-08T03:50:46.515857+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,unknown,2026-09-09,1,unknown,,,,False,unknown,no_flights,2026-09-08T03:52:44.779597+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BLR,HYD,SG,SpiceJet,unknown,2026-09-09,1,unknown,,,,False,unknown,no_flights,2026-09-08T03:53:54.900705+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-15,7,economy,,,6738.0,False,19:55,ok,2026-09-08T03:58:30.050086+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-15,7,economy,,,7158.0,False,19:55,ok,2026-09-08T03:58:30.050086+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-15,7,economy,,,8052.0,False,19:55,ok,2026-09-08T03:58:30.050086+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BLR,SG,SpiceJet,unknown,2026-09-15,7,unknown,,,,False,unknown,no_flights,2026-09-08T03:59:20.506538+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,unknown,2026-09-15,7,unknown,,,,False,unknown,no_flights,2026-09-08T04:01:36.360414+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,unknown,2026-09-15,7,unknown,,,,False,unknown,no_flights,2026-09-08T04:03:46.908296+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BLR,HYD,SG,SpiceJet,unknown,2026-09-15,7,unknown,,,,False,unknown,no_flights,2026-09-08T04:05:53.711740+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+MAA,DEL,SG,SpiceJet,unknown,2026-09-15,7,unknown,,,,False,unknown,no_flights,2026-09-08T04:08:02.334687+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 9091,2026-09-23,15,economy,,,6447.0,False,05:30,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 9091,2026-09-23,15,economy,,,6867.0,False,05:30,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 9091,2026-09-23,15,economy,,,7759.0,False,05:30,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-23,15,economy,,,18047.0,False,19:55,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-23,15,economy,,,18467.0,False,19:55,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-23,15,economy,,,19359.0,False,19:55,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 2802,2026-09-23,15,economy,,,19353.0,False,22:45,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 2802,2026-09-23,15,economy,,,19773.0,False,22:45,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 2802,2026-09-23,15,economy,,,20665.0,False,22:45,ok,2026-09-08T04:09:50.526046+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,unknown,2026-09-23,15,unknown,,,,False,unknown,no_flights,2026-09-08T04:13:54.435492+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-09-23,15,economy,,,22264.0,False,20:10,ok,2026-09-08T04:14:52.251972+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-09-23,15,economy,,,22684.0,False,20:10,ok,2026-09-08T04:14:52.251972+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-09-23,15,economy,,,23576.0,False,20:10,ok,2026-09-08T04:14:52.251972+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BLR,HYD,SG,SpiceJet,unknown,2026-09-23,15,unknown,,,,False,unknown,no_flights,2026-09-08T04:15:53.239261+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+MAA,DEL,SG,SpiceJet,unknown,2026-09-23,15,unknown,,,,False,unknown,no_flights,2026-09-08T04:17:58.954289+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-08,30,economy,,,6447.0,False,19:55,ok,2026-09-08T04:18:52.793577+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-08,30,economy,,,6867.0,False,19:55,ok,2026-09-08T04:18:52.793577+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-08,30,economy,,,7759.0,False,19:55,ok,2026-09-08T04:18:52.793577+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-08,30,economy,,,6447.0,False,22:30,ok,2026-09-08T04:18:52.793577+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-08,30,economy,,,6867.0,False,22:30,ok,2026-09-08T04:18:52.793577+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-08,30,economy,,,7759.0,False,22:30,ok,2026-09-08T04:18:52.793577+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BLR,SG,SpiceJet,unknown,2026-10-08,30,unknown,,,,False,unknown,no_flights,2026-09-08T04:19:53.147790+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,unknown,2026-10-08,30,unknown,,,,False,unknown,no_flights,2026-09-08T04:20:53.850866+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-08,30,economy,,,9618.0,False,20:10,ok,2026-09-08T04:21:41.500685+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-08,30,economy,,,10038.0,False,20:10,ok,2026-09-08T04:21:41.500685+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-08,30,economy,,,10930.0,False,20:10,ok,2026-09-08T04:21:41.500685+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BLR,HYD,SG,SpiceJet,unknown,2026-10-08,30,unknown,,,,False,unknown,no_flights,2026-09-08T04:22:29.215533+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+MAA,DEL,SG,SpiceJet,unknown,2026-10-08,30,unknown,,,,False,unknown,no_flights,2026-09-08T04:23:20.129595+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-23,45,economy,,,6528.0,False,19:55,ok,2026-09-08T04:24:11.977547+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-23,45,economy,,,6948.0,False,19:55,ok,2026-09-08T04:24:11.977547+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-10-23,45,economy,,,7842.0,False,19:55,ok,2026-09-08T04:24:11.977547+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-23,45,economy,,,6528.0,False,22:30,ok,2026-09-08T04:24:11.977547+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-23,45,economy,,,6948.0,False,22:30,ok,2026-09-08T04:24:11.977547+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 802,2026-10-23,45,economy,,,7842.0,False,22:30,ok,2026-09-08T04:24:11.977547+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 669,2026-10-23,45,economy,,,6096.0,False,00:30,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 669,2026-10-23,45,economy,,,6516.0,False,00:30,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 669,2026-10-23,45,economy,,,7408.0,False,00:30,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 642,2026-10-23,45,economy,,,6096.0,False,16:00,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 642,2026-10-23,45,economy,,,6516.0,False,16:00,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 642,2026-10-23,45,economy,,,7408.0,False,16:00,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 487,2026-10-23,45,economy,,,6096.0,False,20:40,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 487,2026-10-23,45,economy,,,6516.0,False,20:40,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,SG 487,2026-10-23,45,economy,,,7408.0,False,20:40,ok,2026-09-08T04:27:51.928350+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-23,45,economy,,,10505.0,False,20:10,ok,2026-09-08T04:28:44.108241+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-23,45,economy,,,10925.0,False,20:10,ok,2026-09-08T04:28:44.108241+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,SG 905,2026-10-23,45,economy,,,11817.0,False,20:10,ok,2026-09-08T04:28:44.108241+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+BLR,HYD,SG,SpiceJet,unknown,2026-10-23,45,unknown,,,,False,unknown,no_flights,2026-09-08T04:29:32.165876+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
+MAA,DEL,SG,SpiceJet,unknown,2026-10-23,45,unknown,,,,False,unknown,no_flights,2026-09-08T04:30:23.049475+05:30,2026-09-08_0347IST,airline_direct,SpiceJet
