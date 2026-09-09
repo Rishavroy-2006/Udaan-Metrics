@@ -7,3 +7,4 @@ uvicorn
 pandas
 google-genai
 anthropic
+prophet

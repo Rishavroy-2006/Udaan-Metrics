@@ -106,6 +106,9 @@ def resolve_carrier(carrier_text: str, flight_num: str) -> tuple[str, str]:
                 return val
 
     # Fallback default if unrecognized
+    if carrier_text and re.search(r"\d{1,2}h|\d{2}:\d{2}", carrier_text, re.IGNORECASE):
+        carrier_text = ""
+        
     return ("UNKNOWN", carrier_text if carrier_text else "Unknown Airline")
 
 
@@ -124,20 +127,37 @@ def parse_flight_cards(page_source: str, origin_code: str, dest_code: str, trave
 
     for card in cards:
         # 1. Flight Number & Airline Name
+        card_text = card.get_text(" ", strip=True)
+
         airline_el = card.find(class_=re.compile(r"airlineName|flightName|boldFont"))
         airline_text = airline_el.get_text(strip=True) if airline_el else ""
+
+        # Guard against matching durations/times (e.g. "01h 45m" or "10:15")
+        if re.search(r"\d{1,2}h|\d{2}:\d{2}", airline_text, re.IGNORECASE):
+            airline_text = ""
+
+        # Fallback to searching the full card text for airline names
+        if not airline_text:
+            for key, val in _NAME_TO_CARRIER.items():
+                if re.search(r"\b" + key + r"\b", card_text, re.IGNORECASE):
+                    airline_text = val[1]
+                    break
 
         flight_num_el = card.find(class_=re.compile(r"flightCode|flightNumber|code"))
         flight_num_raw = flight_num_el.get_text(strip=True) if flight_num_el else ""
 
         # Extract flight number using regex if not explicitly found
-        card_text = card.get_text(" ", strip=True)
         if not flight_num_raw:
             fn_match = re.search(r"\b(6E|AI|IX|SG|QP)[\s-]*\d{3,4}\b", card_text, re.IGNORECASE)
             if fn_match:
                 flight_num_raw = fn_match.group(0)
 
         carrier_code, carrier_name = resolve_carrier(airline_text, flight_num_raw)
+        
+        # Clean up fallback naming if both resolution methods fail
+        if carrier_name and re.search(r"\d{1,2}h|\d{2}:\d{2}", carrier_name, re.IGNORECASE):
+            carrier_name = "Unknown Airline"
+
         flight_num = flight_num_raw.upper() if flight_num_raw else f"{carrier_code} UNK"
 
         # --- Alternate Airport Validation (Rule 7) ---
