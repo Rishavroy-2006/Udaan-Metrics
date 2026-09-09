@@ -1,67 +1,100 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'motion/react';
 import { SkeletonPage } from './common/SkeletonLoaders.jsx';
+import { Plane, CalendarDays, Timer, ArrowRight, Quote } from 'lucide-react';
 
-const StatCard = ({ label, value }) => (
-  <div className="border border-border bg-white p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
-    <div className="text-textSecondary text-xs uppercase tracking-wider font-sans mb-4">{label}</div>
-    <div className="font-mono text-3xl text-navy tabular-nums text-right">{value}</div>
-  </div>
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15 }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
+};
+
+const StatCard = ({ label, value, icon }) => (
+  <motion.div variants={itemVariants} className="glass p-6 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-xl border-t-4 border-t-navy group">
+    <div className="flex justify-between items-start mb-6">
+      <div className="text-textSecondary text-xs uppercase tracking-wider font-sans font-semibold">{label}</div>
+      <div className="p-2 bg-navy/5 rounded-full text-navy group-hover:scale-110 group-hover:bg-navy/10 transition-transform">
+        {icon}
+      </div>
+    </div>
+    <div className="font-mono text-4xl text-navy tabular-nums text-right">{value}</div>
+  </motion.div>
 );
 
-const OverviewTab = ({ indexData, setActiveTab }) => {
+const OverviewTab = ({ indexData }) => {
   const navigate = useNavigate();
   if (!indexData) return <SkeletonPage />;
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 space-y-12 animate-fade-in">
+    <motion.div 
+      className="max-w-6xl mx-auto px-6 py-12 space-y-12"
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
+      exit={{ opacity: 0, y: -20, transition: { duration: 0.2 } }}
+    >
       
       {/* Headline Stat Card */}
-      <div className="border border-border bg-white p-8 border-l-4 border-l-navy flex flex-col md:flex-row justify-between items-start md:items-end">
-        <div>
-          <div className="text-xs font-sans text-textSecondary uppercase tracking-widest mb-2">UDAAN METRICS TODAY</div>
-          <div className="flex items-baseline gap-4">
-            <h2 className="font-serif text-6xl font-bold text-navy">{indexData.value}</h2>
-            <span className="font-mono text-xs uppercase bg-bg text-textSecondary px-2 py-1 rounded-sm border border-border">
-              LIVE DATA (PROVISIONAL)
+      <motion.div variants={itemVariants} className="glass p-8 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-end shadow-lg relative overflow-hidden">
+        <div className="absolute -right-20 -top-20 opacity-5 pointer-events-none">
+          <Plane className="w-96 h-96" />
+        </div>
+        <div className="relative z-10">
+          <div className="text-xs font-sans text-saffron font-bold uppercase tracking-widest mb-3 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            Udaan Metrics Today
+          </div>
+          <div className="flex items-baseline gap-4 flex-wrap">
+            <h2 className="font-serif text-7xl font-bold text-navy drop-shadow-sm">{indexData.value}</h2>
+            <span className="font-mono text-xs font-bold uppercase bg-navy text-white px-3 py-1.5 rounded-full shadow-inner">
+              Live Data (Provisional)
             </span>
           </div>
-          <p className="font-sans text-sm text-textSecondary mt-4">
-            Monitoring {indexData.carriers.length} Carriers across {indexData.routes_tracked} Routes &middot; {indexData.days_live} Days of Live Data
+          <p className="font-sans text-sm text-textSecondary mt-6 bg-white/50 inline-block px-4 py-2 rounded-lg border border-border/50">
+            Monitoring <strong className="text-navy">{indexData.carriers.length}</strong> Carriers across <strong className="text-navy">{indexData.routes_tracked}</strong> Routes &middot; <strong className="text-navy">{indexData.days_live}</strong> Days of Live Data
           </p>
         </div>
-      </div>
+      </motion.div>
 
       {/* Problem Paragraph */}
-      <p className="font-sans text-lg leading-relaxed text-textPrimary max-w-4xl">
-        India's CPI still relies on periodic manual checks for airfares, failing to capture extreme intra-day volatility. Udaan Metrics scrapes real carrier fares daily to compute an accurate, real-time index.
-      </p>
+      <motion.p variants={itemVariants} className="font-sans text-xl leading-relaxed text-textPrimary max-w-4xl border-l-4 border-navy pl-6 py-2">
+        India's CPI still relies on periodic manual checks for airfares, failing to capture extreme intra-day volatility. <strong className="text-navy">Udaan Metrics</strong> scrapes real carrier fares daily to compute an accurate, real-time index.
+      </motion.p>
 
       {/* Stat Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <StatCard label="Routes Tracked" value={indexData.routes_tracked} />
-        <StatCard label="Days of Live Collection" value={indexData.days_live} />
-        <StatCard label="Advance-Purchase Windows" value={indexData.advance_windows} />
-      </div>
+      <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <StatCard label="Routes Tracked" value={indexData.routes_tracked} icon={<Plane className="w-5 h-5" />} />
+        <StatCard label="Days of Live Collection" value={indexData.days_live} icon={<CalendarDays className="w-5 h-5" />} />
+        <StatCard label="Advance-Purchase Windows" value={indexData.advance_windows} icon={<Timer className="w-5 h-5" />} />
+      </motion.div>
 
       {/* Pull Quote */}
-      <blockquote className="border-l-4 border-l-saffron pl-6 py-2 bg-white border-y border-r border-y-border border-r-border my-8 shadow-sm">
-        <p className="font-serif italic text-lg leading-relaxed text-navy max-w-3xl">
-          "Right now, India's official inflation number treats airfares like it's still 2005 — a few manual price checks a month, even though fares swing 300% in a single day. The Laspeyres-style index computation engine is fully built and actively weights routes against a configuration file (DGCA_ROUTE_WEIGHTS). For this demo, the file is populated with estimated placeholder weights (e.g., DEL-BOM at 25%), not yet sourced from an official DGCA traffic report. In production, MoSPI would populate this config with exact passenger-volume figures from official monthly DGCA traffic reports to yield the verified index."
+      <motion.blockquote variants={itemVariants} className="relative glass p-8 rounded-xl my-12 shadow-md">
+        <Quote className="absolute top-4 left-4 w-12 h-12 text-saffron/20 -z-10" />
+        <p className="font-serif italic text-lg leading-relaxed text-navy max-w-4xl relative z-10">
+          "Right now, India's official inflation number treats airfares like it's still 2005 — a few manual price checks a month, even though fares swing 300% in a single day. The Laspeyres-style index computation engine is fully built and actively weights routes against a configuration file. For this demo, the file is populated with estimated placeholder weights. In production, MoSPI would populate this config with exact passenger-volume figures from official DGCA traffic reports to yield the verified index."
         </p>
-      </blockquote>
+      </motion.blockquote>
 
       {/* Link to Live Data */}
-      <div>
+      <motion.div variants={itemVariants} className="flex justify-center md:justify-start">
         <button 
           onClick={() => navigate('/live-data')}
-          className="font-sans text-navy font-semibold hover:text-steel transition-colors group flex items-center gap-2 py-2 px-4 -ml-4 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-navy"
+          className="font-sans bg-navy text-white font-semibold hover:bg-steel transition-colors group flex items-center gap-3 py-4 px-8 rounded-full shadow-lg hover:shadow-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-saffron/50"
         >
-          See the live pipeline <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          See the live pipeline <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </button>
-      </div>
+      </motion.div>
       
-    </div>
+    </motion.div>
   );
 };
 
