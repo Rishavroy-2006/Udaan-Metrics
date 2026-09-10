@@ -306,13 +306,13 @@ const LiveDataTab = () => {
                         {(fare.fare_class || 'Unknown').charAt(0).toUpperCase() + (fare.fare_class || 'Unknown').slice(1)}
                       </span>
                     </td>
-                    <td className={`px-6 py-4 font-mono tabular-nums text-right ${isOutlier ? 'line-through text-red' : ''}`}>
+                    <td className={`px-6 py-4 font-mono tabular-nums text-right truncate max-w-[120px] ${isOutlier ? 'line-through text-red' : ''}`} title={fare.base_fare}>
                       {fare.base_fare != null && fare.base_fare !== '' && !Number.isNaN(Number(fare.base_fare)) ? `₹${Number(fare.base_fare).toLocaleString()}` : '—'}
                     </td>
-                    <td className={`px-6 py-4 font-mono tabular-nums text-right ${isOutlier ? 'line-through text-red' : ''}`}>
+                    <td className={`px-6 py-4 font-mono tabular-nums text-right truncate max-w-[120px] ${isOutlier ? 'line-through text-red' : ''}`} title={fare.taxes_and_fees}>
                       {fare.taxes_and_fees != null && fare.taxes_and_fees !== '' && !Number.isNaN(Number(fare.taxes_and_fees)) ? `₹${Number(fare.taxes_and_fees).toLocaleString()}` : '—'}
                     </td>
-                    <td className={`px-6 py-4 font-mono tabular-nums text-right font-medium ${isOutlier ? 'line-through text-red' : 'text-navy'}`}>
+                    <td className={`px-6 py-4 font-mono tabular-nums text-right font-medium truncate max-w-[150px] ${isOutlier ? 'line-through text-red' : 'text-navy'}`} title={fare.total_fare}>
                       {fare.total_fare != null && fare.total_fare !== '' && !Number.isNaN(Number(fare.total_fare)) ? `₹${Number(fare.total_fare).toLocaleString()}` : '—'}
                     </td>
                     <td className="px-6 py-4 flex flex-col md:flex-row items-start md:items-center gap-2">
