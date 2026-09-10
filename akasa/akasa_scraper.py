@@ -330,11 +330,13 @@ def main(target_matrix=None):
     if getattr(args, 'targets', None):
         import json
         target_matrix = json.loads(args.targets)
-
-    # Support both T+1 format and plain int
-    raw_windows = [w.strip().replace("T+", "") for w in args.windows.split(",") if w.strip()]
-    windows_to_scrape = [int(w) for w in raw_windows]
-    routes_to_run = [(r.split("-")[0], r.split("-")[1]) for r in args.routes.split(",") if "-" in r]
+        windows_to_scrape = sorted([int(k) for k in target_matrix.keys()])
+    else:
+        # Support both T+1 format and plain int
+        raw_windows = [w.strip().replace("T+", "") for w in args.windows.split(",") if w.strip()]
+        windows_to_scrape = [int(w) for w in raw_windows]
+        
+    routes_to_run_global_global = [(r.split("-")[0], r.split("-")[1]) for r in args.routes.split(",") if "-" in r]
 
     now_ist = datetime.datetime.now(IST)
     today = now_ist.date()
@@ -358,9 +360,9 @@ def main(target_matrix=None):
         target_date = today + datetime.timedelta(days=days_ahead)
 
         if target_matrix and str(days_ahead) in target_matrix:
-            routes_to_run = [tuple(r.split("-")) for r in target_matrix[str(days_ahead)]]
+            routes_to_run_global = [tuple(r.split("-")) for r in target_matrix[str(days_ahead)]]
             
-        for origin, dest in routes_to_run:
+        for origin, dest in routes_to_run_global:
             print(f"\n--- Scraping T+{days_ahead} ({origin} -> {dest}) ---")
             usable, has_error = scrape_akasa(origin, dest, target_date, days_ahead, csv_path)
             print(f"  -> {usable} usable quote(s) appended.")

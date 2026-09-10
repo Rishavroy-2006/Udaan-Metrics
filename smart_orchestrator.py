@@ -110,6 +110,15 @@ def run_scraper(script: str, missing_targets: dict) -> bool:
     print(f"  🚀  {script}  →  windows: {windows_str}")
     print(f"{'='*62}")
 
+    # Cleanup zombie Chrome processes to prevent 'target window already closed' crashes
+    try:
+        import platform
+        if platform.system() == "Darwin":
+            subprocess.run(["pkill", "-9", "-f", "Google Chrome"], stderr=subprocess.DEVNULL)
+            subprocess.run(["pkill", "-9", "-f", "chromedriver"], stderr=subprocess.DEVNULL)
+    except Exception:
+        pass
+
     # Try xvfb-run first (CI / Linux); fall back for macOS dev machines
     for cmd in (
         ["xvfb-run", "--auto-servernum", "python3", script, "--targets", targets_json],

@@ -348,7 +348,7 @@ def run(target_windows=None, target_matrix=None):
     today_str = now.strftime("%Y-%m-%d")
     time_str = now.strftime("%H%MIST")
     
-    windows_to_scrape = target_windows if target_windows else ADVANCE_PURCHASE_WINDOWS
+    windows_to_scrape = target_windows if target_windows else (list(map(int, target_matrix.keys())) if target_matrix else ADVANCE_PURCHASE_WINDOWS)
     windows_str = "-".join([f"T{w}" for w in windows_to_scrape])
     
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
