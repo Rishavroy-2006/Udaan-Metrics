@@ -1,0 +1,11 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-17,7,economy,,,9392.0,False,19:55,ok,2026-09-10T06:02:37.806321+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-17,7,economy,,,9812.0,False,19:55,ok,2026-09-10T06:02:37.806321+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 162,2026-09-17,7,economy,,,10704.0,False,19:55,ok,2026-09-10T06:02:37.806321+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 2802,2026-09-17,7,economy,,,19353.0,False,22:45,ok,2026-09-10T06:02:37.806321+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 2802,2026-09-17,7,economy,,,19773.0,False,22:45,ok,2026-09-10T06:02:37.806321+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+DEL,BOM,SG,SpiceJet,SG 2802,2026-09-17,7,economy,,,20665.0,False,22:45,ok,2026-09-10T06:02:37.806321+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+DEL,CCU,SG,SpiceJet,unknown,2026-09-17,7,unknown,,,,False,unknown,no_flights,2026-09-10T06:03:34.526663+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+BLR,HYD,SG,SpiceJet,unknown,2026-09-17,7,unknown,,,,False,unknown,no_flights,2026-09-10T06:04:35.216039+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+DEL,BLR,SG,SpiceJet,unknown,2026-10-10,30,unknown,,,,False,unknown,no_flights,2026-09-10T06:05:26.421277+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
+BOM,BLR,SG,SpiceJet,unknown,2026-10-10,30,unknown,,,,False,unknown,no_flights,2026-09-10T06:06:16.134768+05:30,2026-09-10_0602IST,airline_direct,SpiceJet
