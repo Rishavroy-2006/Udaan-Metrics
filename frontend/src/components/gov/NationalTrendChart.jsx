@@ -67,8 +67,10 @@ const NationalTrendChart = () => {
         <div className="border border-border bg-white p-5">
           <div className="text-xs font-sans text-textSecondary uppercase tracking-widest mb-1">OTA Premium</div>
           <div className="flex items-baseline gap-2">
-            <div className="font-mono text-3xl text-red tabular-nums">
-              {latest && latest.ota_premium_pct ? `+${latest.ota_premium_pct}%` : '—'}
+            <div className={`font-mono text-3xl tabular-nums ${latest && latest.ota_premium_pct != null && latest.ota_premium_pct > 0 ? 'text-red' : 'text-green'}`}>
+              {latest && latest.ota_premium_pct != null 
+                ? `${latest.ota_premium_pct > 0 ? '+' : ''}${latest.ota_premium_pct}%` 
+                : '—'}
             </div>
           </div>
           <div className="text-xs text-textSecondary mt-1">markup on platforms</div>

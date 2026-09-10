@@ -27,12 +27,37 @@ async function safeFetch(url) {
 // ──────────────────────────────────────────────────────
 export const getNationalIndexTrend = async () => {
   const historyData = await safeFetch(`${API_BASE}/index/history?days=30`);
+  
+  // Calculate live OTA Premium from raw fares
+  const fares = await safeFetch(`${API_BASE}/fares/raw`);
+  let currentOtaPremiumPct = null;
+  
+  if (fares && Array.isArray(fares) && fares.length > 0) {
+    const otaFares = fares.filter(f => f.source === 'ota' && f.status === 'ok' && f.outlier_flag !== true && f.outlier_flag !== 'True');
+    const directFares = fares.filter(f => f.source !== 'ota' && f.status === 'ok' && f.outlier_flag !== true && f.outlier_flag !== 'True');
+    
+    if (otaFares.length > 0 && directFares.length > 0) {
+      const otaPrices = otaFares.map(f => Number(f.total_fare)).sort((a,b) => a - b);
+      const directPrices = directFares.map(f => Number(f.total_fare)).sort((a,b) => a - b);
+      
+      const otaMedian = otaPrices[Math.floor(otaPrices.length / 2)];
+      const directMedian = directPrices[Math.floor(directPrices.length / 2)];
+      
+      if (directMedian > 0) {
+        currentOtaPremiumPct = parseFloat((((otaMedian - directMedian) / directMedian) * 100).toFixed(1));
+      }
+    }
+  }
+
   if (historyData && historyData.status === 'success' && historyData.records) {
-    return historyData.records.map(r => ({
-      date: r.date,
-      value: r.composite_fare_index,
-      ota_premium_pct: 0
-    }));
+    return historyData.records.map((r, index) => {
+      const isLatest = index === historyData.records.length - 1;
+      return {
+        date: r.date,
+        value: r.composite_fare_index,
+        ota_premium_pct: isLatest ? currentOtaPremiumPct : null
+      };
+    });
   }
   return [];
 };
