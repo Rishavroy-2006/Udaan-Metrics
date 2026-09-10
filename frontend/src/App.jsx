@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'motion/react';
 import { SkeletonPage, SkeletonGovPortal, SkeletonCitizenPortal, SkeletonLiveData, SkeletonText } from './components/common/SkeletonLoaders.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
@@ -31,25 +30,6 @@ const TabLoader = () => {
   }
 };
 
-const AnimatedRoutes = ({ indexData }) => {
-  const location = useLocation();
-  
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<OverviewTab indexData={indexData} />} />
-        <Route path="/citizen-portal" element={<CitizenDashboard />} />
-        <Route path="/gov-portal" element={<GovernmentDashboard />} />
-        <Route path="/live-data" element={<LiveDataTab />} />
-        <Route path="/methodology" element={<MethodologyTab />} />
-        <Route path="/about" element={<AboutTab />} />
-        <Route path="/more" element={<MoreMenuTab />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </AnimatePresence>
-  );
-};
-
 export default function App() {
   const [indexData, setIndexData] = useState(null);
 
@@ -65,14 +45,23 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-bg flex flex-col font-sans">
+      <div className="min-h-screen bg-bg flex flex-col">
         <Header 
           lastUpdated={indexData?.timestamp}
         />
         
-        <main className="flex-grow flex flex-col pb-20 md:pb-0 relative">
+        <main className="flex-grow flex flex-col pb-20 md:pb-0">
           <Suspense fallback={<TabLoader />}>
-            <AnimatedRoutes indexData={indexData} />
+            <Routes>
+              <Route path="/" element={<OverviewTab indexData={indexData} />} />
+              <Route path="/citizen-portal" element={<CitizenDashboard />} />
+              <Route path="/gov-portal" element={<GovernmentDashboard />} />
+              <Route path="/live-data" element={<LiveDataTab />} />
+              <Route path="/methodology" element={<MethodologyTab />} />
+              <Route path="/about" element={<AboutTab />} />
+              <Route path="/more" element={<MoreMenuTab />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
           </Suspense>
         </main>
 

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
-import { Users, Radio } from 'lucide-react';
 import RouteSelector from './citizen/RouteSelector.jsx';
 import FareTrajectoryChart from './citizen/FareTrajectoryChart.jsx';
 import BookNowWaitSignal from './citizen/BookNowWaitSignal.jsx';
@@ -10,48 +8,42 @@ import AlertsSignup from './citizen/AlertsSignup.jsx';
  * CitizenDashboard — Main container for the Citizen / Traveller Fare Intelligence Portal
  *
  * Answers: "Should I book now or wait?"
+ *
+ * Components rendered in order:
+ *   1. RouteSelector — Dropdown/pill selector over the 6 active DGCA corridors
+ *   2. BookNowWaitSignal — Traffic-light decision badge (Green / Amber / Red)
+ *   3. FareTrajectoryChart — Single-route T+1..T+45 trajectory chart with SeasonalBaselineOverlay toggle
+ *   4. AlertsSignup — Price alert subscription form UI (disabled prototype state)
  */
-
-const pageVariants = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
-  exit: { opacity: 0, y: -20, transition: { duration: 0.2 } }
-};
 
 const CitizenDashboard = () => {
   const [selectedRoute, setSelectedRoute] = useState('DEL-BOM');
 
   return (
-    <motion.div 
-      variants={pageVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      className="max-w-7xl mx-auto px-6 py-8 space-y-8"
-    >
+    <div className="max-w-7xl mx-auto px-6 py-8 space-y-8 animate-fade-in">
 
       {/* Portal Header */}
       <div className="border-b border-border pb-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <div className="flex items-center gap-3 mb-3">
-              <span className="bg-steel text-white font-mono text-xs px-3 py-1.5 rounded-full shadow-sm uppercase tracking-wider flex items-center gap-2">
-                <Users className="w-3 h-3" /> Citizen Portal
+            <div className="flex items-center gap-3 mb-2">
+              <span className="bg-steel text-white font-mono text-xs px-2 py-1 rounded-sm uppercase tracking-wider">
+                Citizen Portal
               </span>
-              <span className="bg-green/10 text-green font-sans text-xs px-3 py-1.5 rounded-full border border-green/20 uppercase tracking-wider font-bold flex items-center gap-1">
-                <Radio className="w-3 h-3 animate-pulse" /> Live Data
+              <span className="bg-green/10 text-green font-sans text-xs px-2 py-1 rounded-sm border border-green/20 uppercase tracking-wider">
+                Live Data
               </span>
             </div>
-            <h2 className="font-serif text-4xl text-navy font-bold drop-shadow-sm">
+            <h2 className="font-serif text-3xl text-navy">
               Personalized Airfare Trajectory & Decision Portal
             </h2>
-            <p className="font-sans text-base text-textSecondary mt-2">
+            <p className="font-sans text-sm text-textSecondary mt-1">
               Track route-level fare trajectories against historical baselines and know when to book.
             </p>
           </div>
 
-          <div className="text-xs font-sans text-textSecondary bg-white border border-border px-4 py-2 rounded-lg shadow-sm">
-            Active Corridor: <span className="font-mono text-navy font-bold text-sm ml-1">{selectedRoute}</span>
+          <div className="text-xs font-sans text-textSecondary">
+            Active Corridor: <span className="font-mono text-navy font-bold">{selectedRoute}</span>
           </div>
         </div>
       </div>
@@ -78,7 +70,7 @@ const CitizenDashboard = () => {
       />
 
 
-    </motion.div>
+    </div>
   );
 };
 
