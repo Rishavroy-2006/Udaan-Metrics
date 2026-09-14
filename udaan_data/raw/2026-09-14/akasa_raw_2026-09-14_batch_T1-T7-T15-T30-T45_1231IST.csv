@@ -1,0 +1,6 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run
+DEL,BOM,QP,Akasa Air,error,2026-09-15,1,economy,,,,False,unknown,error,2026-09-14T12:31:26.711066+05:30,2026-09-14_1231IST
+DEL,BLR,QP,Akasa Air,error,2026-09-15,1,economy,,,,False,unknown,error,2026-09-14T12:32:36.330092+05:30,2026-09-14_1232IST
+BOM,BLR,QP,Akasa Air,error,2026-09-15,1,economy,,,,False,unknown,error,2026-09-14T12:33:27.370042+05:30,2026-09-14_1233IST
+DEL,CCU,QP,Akasa Air,error,2026-09-15,1,economy,,,,False,unknown,error,2026-09-14T12:34:27.594326+05:30,2026-09-14_1234IST
+BLR,HYD,QP,Akasa Air,error,2026-09-15,1,economy,,,,False,unknown,error,2026-09-14T12:35:17.566919+05:30,2026-09-14_1235IST
