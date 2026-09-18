@@ -1,0 +1,2 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BOM,6E,IndiGo,unknown,2026-10-18,30,unknown,,,,False,unknown,error,2026-09-18T11:59:58.499407+05:30,2026-09-18_1159IST,airline_direct,IndiGo
