@@ -1,0 +1,6 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BOM,6E,IndiGo,unknown,2026-09-24,1,unknown,,,,False,unknown,error,2026-09-23T12:03:24.089809+05:30,2026-09-23_1203IST,airline_direct,IndiGo
+DEL,BLR,6E,IndiGo,unknown,2026-09-24,1,unknown,,,,False,unknown,error,2026-09-23T12:04:41.767357+05:30,2026-09-23_1204IST,airline_direct,IndiGo
+BOM,BLR,6E,IndiGo,unknown,2026-09-24,1,unknown,,,,False,unknown,error,2026-09-23T12:05:53.969057+05:30,2026-09-23_1205IST,airline_direct,IndiGo
+DEL,CCU,6E,IndiGo,unknown,2026-09-24,1,unknown,,,,False,unknown,error,2026-09-23T12:07:04.071819+05:30,2026-09-23_1207IST,airline_direct,IndiGo
+BLR,HYD,6E,IndiGo,unknown,2026-09-24,1,unknown,,,,False,unknown,error,2026-09-23T12:08:10.257082+05:30,2026-09-23_1208IST,airline_direct,IndiGo
