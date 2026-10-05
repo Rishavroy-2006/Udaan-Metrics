@@ -26936,3 +26936,18 @@ MAA,DEL,IX,Air India Express,AI 9866,2026-11-13,45,economy,,,22501.0,False,19:00
 MAA,DEL,IX,Air India Express,AI 9756,2026-11-13,45,economy,,,15370.0,False,13:10,ok,2026-09-30T01:12:13.439368+05:30,2026-09-30_0112IST,airline_direct,Air India,False
 MAA,DEL,AI,Air India,AI 2779,2026-11-13,45,economy,,,18143.0,False,07:00,ok,2026-09-30T01:12:13.439368+05:30,2026-09-30_0112IST,airline_direct,Air India,False
 MAA,DEL,IX,Air India Express,AI 9646,2026-11-13,45,economy,,,22501.0,False,09:45,ok,2026-09-30T01:12:13.439368+05:30,2026-09-30_0112IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,error,2026-10-06,1,economy,,,,False,unknown,error,2026-10-05T13:07:55.156818+05:30,2026-10-05_1307IST,airline_direct,Air India,False
+DEL,BLR,AI,Air India,error,2026-10-06,1,economy,,,,False,unknown,error,2026-10-05T13:08:52.606545+05:30,2026-10-05_1308IST,airline_direct,Air India,False
+BOM,BLR,AI,Air India,error,2026-10-06,1,economy,,,,False,unknown,error,2026-10-05T13:09:56.489008+05:30,2026-10-05_1309IST,airline_direct,Air India,False
+DEL,CCU,AI,Air India,error,2026-10-06,1,economy,,,,False,unknown,error,2026-10-05T13:10:45.455615+05:30,2026-10-05_1310IST,airline_direct,Air India,False
+BLR,HYD,AI,Air India,error,2026-10-06,1,economy,,,,False,unknown,error,2026-10-05T13:11:47.238682+05:30,2026-10-05_1311IST,airline_direct,Air India,False
+DEL,BOM,MMT,MakeMyTrip,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:19:37.200487+05:30,2026-10-05_1319IST,ota,MakeMyTrip,False
+DEL,BLR,MMT,MakeMyTrip,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:25:04.890624+05:30,2026-10-05_1325IST,ota,MakeMyTrip,False
+BOM,BLR,MMT,MakeMyTrip,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:30:32.786516+05:30,2026-10-05_1330IST,ota,MakeMyTrip,False
+DEL,CCU,MMT,MakeMyTrip,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:36:50.594796+05:30,2026-10-05_1336IST,ota,MakeMyTrip,False
+BLR,HYD,MMT,MakeMyTrip,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:42:21.576704+05:30,2026-10-05_1342IST,ota,MakeMyTrip,False
+DEL,BOM,GOI,Goibibo,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:48:29.489926+05:30,GOIBIBO_RUN_20261005_134829,ota,Goibibo,False
+DEL,BLR,GOI,Goibibo,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:54:11.517015+05:30,GOIBIBO_RUN_20261005_135411,ota,Goibibo,False
+BOM,BLR,GOI,Goibibo,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T13:59:22.116528+05:30,GOIBIBO_RUN_20261005_135922,ota,Goibibo,False
+DEL,CCU,GOI,Goibibo,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T14:04:39.051659+05:30,GOIBIBO_RUN_20261005_140439,ota,Goibibo,False
+BLR,HYD,GOI,Goibibo,none,2026-10-06,1,economy,,,,False,unknown,parse_error,2026-10-05T14:10:10.361553+05:30,GOIBIBO_RUN_20261005_141010,ota,Goibibo,False
