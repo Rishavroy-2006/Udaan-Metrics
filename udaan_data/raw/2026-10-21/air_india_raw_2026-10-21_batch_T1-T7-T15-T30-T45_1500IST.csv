@@ -1,0 +1,12 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BLR,AI,Air India,none,2026-10-22,1,economy,,,,False,unknown,parse_error,2026-10-21T15:00:30.158066+05:30,2026-10-21_1500IST,airline_direct,Air India
+BOM,BLR,AI,Air India,error,2026-10-22,1,economy,,,,False,unknown,error,2026-10-21T15:01:51.203114+05:30,2026-10-21_1501IST,airline_direct,Air India
+DEL,CCU,AI,Air India,error,2026-10-22,1,economy,,,,False,unknown,error,2026-10-21T15:02:57.184080+05:30,2026-10-21_1502IST,airline_direct,Air India
+BLR,HYD,AI,Air India,error,2026-10-22,1,economy,,,,False,unknown,error,2026-10-21T15:03:52.746152+05:30,2026-10-21_1503IST,airline_direct,Air India
+MAA,DEL,AI,Air India,error,2026-10-22,1,economy,,,,False,unknown,error,2026-10-21T15:04:45.544156+05:30,2026-10-21_1504IST,airline_direct,Air India
+DEL,BOM,AI,Air India,none,2026-10-28,7,economy,,,,False,unknown,parse_error,2026-10-21T15:05:47.011196+05:30,2026-10-21_1505IST,airline_direct,Air India
+DEL,BLR,AI,Air India,error,2026-10-28,7,economy,,,,False,unknown,error,2026-10-21T15:07:06.392479+05:30,2026-10-21_1507IST,airline_direct,Air India
+BOM,BLR,AI,Air India,error,2026-10-28,7,economy,,,,False,unknown,error,2026-10-21T15:08:07.633586+05:30,2026-10-21_1508IST,airline_direct,Air India
+DEL,CCU,AI,Air India,error,2026-10-28,7,economy,,,,False,unknown,error,2026-10-21T15:08:54.173028+05:30,2026-10-21_1508IST,airline_direct,Air India
+BLR,HYD,AI,Air India,error,2026-10-28,7,economy,,,,False,unknown,error,2026-10-21T15:09:44.856455+05:30,2026-10-21_1509IST,airline_direct,Air India
+MAA,DEL,AI,Air India,error,2026-10-28,7,economy,,,,False,unknown,error,2026-10-21T15:10:50.797305+05:30,2026-10-21_1510IST,airline_direct,Air India
