@@ -1,0 +1,21 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BLR,AI,Air India,AI 2817,2026-10-24,1,economy,,,21162.0,False,16:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2653,2026-10-24,1,economy,,,10609.0,False,04:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 427,2026-10-24,1,economy,,,11194.0,False,08:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2485,2026-10-24,1,economy,,,13213.0,False,10:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2809,2026-10-24,1,economy,,,15473.0,False,19:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2757,2026-10-24,1,economy,,,10609.0,False,00:15,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2803,2026-10-24,1,economy,,,11194.0,False,06:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2415,2026-10-24,1,economy,,,12780.0,False,09:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2813,2026-10-24,1,economy,,,15473.0,False,18:00,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2512,2026-10-24,1,economy,,,15473.0,False,19:00,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2412,2026-10-24,1,economy,,,15473.0,False,21:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2487,2026-10-24,1,economy,,,15743.0,False,18:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,IX,Air India Express,AI 9431,2026-10-24,1,economy,,,15937.0,False,22:00,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2819,2026-10-24,1,economy,,,18578.0,False,15:00,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2417,2026-10-24,1,economy,,,25724.0,False,13:00,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,IX,Air India Express,AI 9401,2026-10-24,1,economy,,,12113.0,False,10:15,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2963,2026-10-24,1,economy,,,16032.0,False,09:00,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2441,2026-10-24,1,economy,,,18884.0,False,14:10,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2678,2026-10-24,1,economy,,,16032.0,False,08:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
+DEL,BLR,AI,Air India,AI 2975,2026-10-24,1,economy,,,16171.0,False,06:30,ok,2026-10-23T12:05:48.620175+05:30,2026-10-23_1205IST,airline_direct,Air India
