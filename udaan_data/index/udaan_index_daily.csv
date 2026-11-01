@@ -27202,3 +27202,47 @@ DEL,BLR,GOI,Goibibo,none,2026-10-22,1,economy,,,,False,unknown,parse_error,2026-
 BOM,BLR,GOI,Goibibo,none,2026-10-22,1,economy,,,,False,unknown,parse_error,2026-10-21T15:55:27.795473+05:30,GOIBIBO_RUN_20261021_155527,ota,Goibibo,False
 DEL,CCU,GOI,Goibibo,none,2026-10-22,1,economy,,,,False,unknown,parse_error,2026-10-21T16:00:16.773697+05:30,GOIBIBO_RUN_20261021_160016,ota,Goibibo,False
 BLR,HYD,GOI,Goibibo,none,2026-10-22,1,economy,,,,False,unknown,parse_error,2026-10-21T16:04:56.097995+05:30,GOIBIBO_RUN_20261021_160456,ota,Goibibo,False
+DEL,BOM,AI,Air India,AI 2437,2026-11-01,1,economy,,,7217.0,False,22:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2957,2026-11-01,1,economy,,,7483.0,False,20:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2439,2026-11-01,1,economy,,,7483.0,False,23:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2981,2026-11-01,1,economy,,,7483.0,False,21:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 441,2026-11-01,1,economy,,,7483.0,False,17:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2941,2026-11-01,1,economy,,,7483.0,False,16:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,IX,Air India Express,AI 9550,2026-11-01,1,economy,,,7413.0,False,20:40,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,IX,Air India Express,AI 9836,2026-11-01,1,economy,,,7413.0,False,08:50,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2975,2026-11-01,1,economy,,,7217.0,False,06:20,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2555,2026-11-01,1,economy,,,7217.0,False,17:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2425,2026-11-01,1,economy,,,7217.0,False,10:25,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2951,2026-11-01,1,economy,,,7217.0,False,13:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2999,2026-11-01,1,economy,,,7217.0,False,22:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2955,2026-11-01,1,economy,,,7217.0,False,18:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2587,2026-11-01,1,economy,,,7217.0,False,12:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2945,2026-11-01,1,economy,,,7217.0,False,11:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2573,2026-11-01,1,economy,,,7217.0,False,05:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2433,2026-11-01,1,economy,,,7217.0,False,21:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2933,2026-11-01,1,economy,,,7217.0,False,15:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2963,2026-11-01,1,economy,,,7217.0,False,09:00,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2678,2026-11-01,1,economy,,,7217.0,False,08:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2943,2026-11-01,1,economy,,,7217.0,False,07:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2987,2026-11-01,1,economy,,,7217.0,False,13:10,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,AI 2985,2026-11-01,1,economy,,,8519.0,False,19:30,ok,2026-11-01T01:16:08.381376+05:30,2026-11-01_0116IST,airline_direct,Air India,True
+DEL,BLR,AI,Air India,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-01T13:31:00.075939+05:30,2026-11-01_1331IST,airline_direct,Air India,False
+BOM,BLR,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-01T13:32:22.039541+05:30,2026-11-01_1332IST,airline_direct,Air India,False
+DEL,CCU,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-01T13:33:15.446361+05:30,2026-11-01_1333IST,airline_direct,Air India,False
+BLR,HYD,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-01T13:34:09.429232+05:30,2026-11-01_1334IST,airline_direct,Air India,False
+MAA,DEL,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-01T13:35:09.215216+05:30,2026-11-01_1335IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-02T01:32:00.134905+05:30,2026-11-02_0132IST,airline_direct,Air India,False
+DEL,BLR,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-02T01:32:54.746667+05:30,2026-11-02_0132IST,airline_direct,Air India,False
+BOM,BLR,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-02T01:33:48.464551+05:30,2026-11-02_0133IST,airline_direct,Air India,False
+DEL,CCU,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-02T01:34:47.756023+05:30,2026-11-02_0134IST,airline_direct,Air India,False
+BLR,HYD,AI,Air India,error,2026-11-02,1,economy,,,,False,unknown,error,2026-11-02T01:35:44.535401+05:30,2026-11-02_0135IST,airline_direct,Air India,False
+DEL,BOM,MMT,MakeMyTrip,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T01:43:53.162648+05:30,2026-11-02_0143IST,ota,MakeMyTrip,False
+DEL,BLR,MMT,MakeMyTrip,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T01:50:09.605092+05:30,2026-11-02_0150IST,ota,MakeMyTrip,False
+BOM,BLR,MMT,MakeMyTrip,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T01:56:34.049225+05:30,2026-11-02_0156IST,ota,MakeMyTrip,False
+DEL,CCU,MMT,MakeMyTrip,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T02:02:43.560557+05:30,2026-11-02_0202IST,ota,MakeMyTrip,False
+BLR,HYD,MMT,MakeMyTrip,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T02:08:58.766871+05:30,2026-11-02_0208IST,ota,MakeMyTrip,False
+DEL,BOM,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T02:15:00.236207+05:30,GOIBIBO_RUN_20261102_021500,ota,Goibibo,False
+DEL,BLR,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T02:19:41.370466+05:30,GOIBIBO_RUN_20261102_021941,ota,Goibibo,False
+BOM,BLR,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T02:24:16.641360+05:30,GOIBIBO_RUN_20261102_022416,ota,Goibibo,False
+DEL,CCU,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T02:28:54.966297+05:30,GOIBIBO_RUN_20261102_022854,ota,Goibibo,False
+BLR,HYD,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T02:33:32.984259+05:30,GOIBIBO_RUN_20261102_023332,ota,Goibibo,False
