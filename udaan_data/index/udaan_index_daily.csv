@@ -27334,7 +27334,6 @@ DEL,BLR,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-
 BOM,BLR,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T04:54:19.608465+05:30,GOIBIBO_RUN_20261102_045419,ota,Goibibo,False
 DEL,CCU,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T04:59:02.659663+05:30,GOIBIBO_RUN_20261102_045902,ota,Goibibo,False
 BLR,HYD,GOI,Goibibo,none,2026-11-02,1,economy,,,,False,unknown,parse_error,2026-11-02T05:03:51.119571+05:30,GOIBIBO_RUN_20261102_050351,ota,Goibibo,False
-DEL,BLR,AI,Air India,error,2026-11-03,1,economy,,,,False,unknown,error,2026-11-02T13:40:14.540732+05:30,2026-11-02_1340IST,airline_direct,Air India,False
 DEL,BOM,AI,Air India,error,2026-11-09,7,economy,,,,False,unknown,error,2026-11-02T13:41:13.769118+05:30,2026-11-02_1341IST,airline_direct,Air India,False
 DEL,BLR,AI,Air India,error,2026-11-09,7,economy,,,,False,unknown,error,2026-11-02T13:42:04.492684+05:30,2026-11-02_1342IST,airline_direct,Air India,False
 BOM,BLR,AI,Air India,error,2026-11-09,7,economy,,,,False,unknown,error,2026-11-02T13:42:53.949874+05:30,2026-11-02_1342IST,airline_direct,Air India,False
@@ -27349,3 +27348,20 @@ DEL,BLR,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-
 BOM,BLR,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-02T14:31:53.224967+05:30,GOIBIBO_RUN_20261102_143153,ota,Goibibo,False
 DEL,CCU,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-02T14:36:30.006071+05:30,GOIBIBO_RUN_20261102_143630,ota,Goibibo,False
 BLR,HYD,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-02T14:41:19.807787+05:30,GOIBIBO_RUN_20261102_144119,ota,Goibibo,False
+DEL,BLR,AI,Air India,error,2026-11-03,1,economy,,,,False,unknown,error,2026-11-02T18:14:30.315145+05:30,2026-11-02_1814IST,airline_direct,Air India,False
+DEL,BOM,AI,Air India,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T03:23:08.247896+05:30,2026-11-03_0323IST,airline_direct,Air India,False
+DEL,BLR,AI,Air India,error,2026-11-03,1,economy,,,,False,unknown,error,2026-11-03T03:24:26.749113+05:30,2026-11-03_0324IST,airline_direct,Air India,False
+BOM,BLR,AI,Air India,error,2026-11-03,1,economy,,,,False,unknown,error,2026-11-03T03:25:17.213384+05:30,2026-11-03_0325IST,airline_direct,Air India,False
+DEL,CCU,AI,Air India,error,2026-11-03,1,economy,,,,False,unknown,error,2026-11-03T03:26:13.613390+05:30,2026-11-03_0326IST,airline_direct,Air India,False
+BLR,HYD,AI,Air India,error,2026-11-03,1,economy,,,,False,unknown,error,2026-11-03T03:27:03.926611+05:30,2026-11-03_0327IST,airline_direct,Air India,False
+MAA,DEL,AI,Air India,error,2026-11-03,1,economy,,,,False,unknown,error,2026-11-03T03:27:57.924086+05:30,2026-11-03_0327IST,airline_direct,Air India,False
+DEL,BOM,MMT,MakeMyTrip,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T03:35:48.270430+05:30,2026-11-03_0335IST,ota,MakeMyTrip,False
+DEL,BLR,MMT,MakeMyTrip,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T03:42:10.345635+05:30,2026-11-03_0342IST,ota,MakeMyTrip,False
+BOM,BLR,MMT,MakeMyTrip,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T03:48:18.782139+05:30,2026-11-03_0348IST,ota,MakeMyTrip,False
+DEL,CCU,MMT,MakeMyTrip,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T03:54:35.086215+05:30,2026-11-03_0354IST,ota,MakeMyTrip,False
+BLR,HYD,MMT,MakeMyTrip,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T04:00:55.161931+05:30,2026-11-03_0400IST,ota,MakeMyTrip,False
+DEL,BOM,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T04:07:02.565226+05:30,GOIBIBO_RUN_20261103_040702,ota,Goibibo,False
+DEL,BLR,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T04:11:46.792044+05:30,GOIBIBO_RUN_20261103_041146,ota,Goibibo,False
+BOM,BLR,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T04:16:32.699746+05:30,GOIBIBO_RUN_20261103_041632,ota,Goibibo,False
+DEL,CCU,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T04:21:17.855728+05:30,GOIBIBO_RUN_20261103_042117,ota,Goibibo,False
+BLR,HYD,GOI,Goibibo,none,2026-11-03,1,economy,,,,False,unknown,parse_error,2026-11-03T04:26:03.924774+05:30,GOIBIBO_RUN_20261103_042603,ota,Goibibo,False
