@@ -1,0 +1,6 @@
+origin,destination,carrier_code,carrier_name,flight_num,travel_date,advance_purchase_days,fare_class,base_fare,taxes_and_fees,total_fare,fare_split_estimated,departure_time,status,scraped_at,capture_run,source,source_name
+DEL,BOM,MMT,MakeMyTrip,none,2026-11-04,1,economy,,,,False,unknown,parse_error,2026-11-03T05:43:33.471319+05:30,2026-11-03_0543IST,ota,MakeMyTrip
+DEL,BLR,MMT,MakeMyTrip,none,2026-11-04,1,economy,,,,False,unknown,parse_error,2026-11-03T05:49:55.879672+05:30,2026-11-03_0549IST,ota,MakeMyTrip
+BOM,BLR,MMT,MakeMyTrip,none,2026-11-04,1,economy,,,,False,unknown,parse_error,2026-11-03T05:56:11.576469+05:30,2026-11-03_0556IST,ota,MakeMyTrip
+DEL,CCU,MMT,MakeMyTrip,none,2026-11-04,1,economy,,,,False,unknown,parse_error,2026-11-03T06:02:36.215400+05:30,2026-11-03_0602IST,ota,MakeMyTrip
+BLR,HYD,MMT,MakeMyTrip,none,2026-11-04,1,economy,,,,False,unknown,parse_error,2026-11-03T06:08:45.849461+05:30,2026-11-03_0608IST,ota,MakeMyTrip
